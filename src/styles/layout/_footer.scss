@@ -1,0 +1,148 @@
+.footer {
+  padding: 49px 55px 92px 80px;
+  background: $lightGray;
+  overflow: hidden;
+  @media screen and (max-width: 768px) {
+    padding: 39px 25px 52px 30px;
+  }
+
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 36px;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+
+    }
+
+  }
+
+  &__nav {
+    flex-basis: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5px 10px;
+  }
+
+  &__anchor {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    position: relative;
+    align-self: flex-start;
+
+    &.main {
+      font-weight: bold;
+      margin-bottom: 16px;
+      position: static;
+    }
+
+    &:after {
+      transition: transform .75s;
+      position: absolute;
+      content: "";
+      height: 2px;
+      background: $black;
+      width: 100%;
+      bottom: -1px;
+      right: 0px;
+      transform-origin: right;
+      transform: scaleX(0);
+
+    }
+
+    &:hover {
+      &:after {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+    }
+
+    &.active {
+      &:after {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+    }
+  }
+
+  &__reg {
+    display: flex;
+    flex-direction: column;
+    width: 131px;
+
+
+    button:last-child {
+      margin-top: 16px;
+    }
+
+    @media screen and (max-width: 768px) {
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+      button:last-child {
+        margin-top: 0px;
+      }
+      button {
+        flex-basis: 48%;
+      }
+    }
+  }
+
+  .footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 32px;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+
+  }
+
+  &__line {
+    background: $Gray;
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 4px;
+    top: 0;
+  }
+
+  &__copy {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: -0.02px;
+    color: $black;
+
+  }
+
+  &__social {
+    display: flex;
+    @media screen and (max-width: 768px) {
+      margin-top: 20px;
+    }
+
+    span {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 1.5;
+      letter-spacing: -0.02px;
+      color: $black;
+    }
+  }
+
+  &__social-list {
+    margin-left: 22px;
+  }
+
+
+}

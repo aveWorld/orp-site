@@ -1,0 +1,154 @@
+body {
+  position: relative;
+  font-family: $main-font-family;
+  color: $black;
+  background-color: $white;
+  font-weight: 400;
+  letter-spacing: -0.02px;
+
+}
+
+* {
+  outline: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  //padding:108px 0 204px ;
+  @media screen and (max-width: 768px) {
+    //padding:70px 0 104px ;
+  }
+}
+
+html {
+  font-size: 24px;
+}
+
+a {
+  color: $black;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:visited {
+    text-decoration: none;
+  }
+
+  &:link {
+    text-decoration: none;
+  }
+
+  &:active {
+    text-decoration: none;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+
+.hideScroll {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.btn {
+  width: 100%;
+  background: $lightGreen;
+  font-size: 15px;
+  line-height: 1.1;
+  padding: 8px 0 9px 0px;
+  text-align: center;
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.79);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: .3s;
+
+  &:hover {
+    background: $lightGreenHover;
+  }
+
+  &:active {
+    background: $lightGreenActive;
+  }
+
+  &.gov {
+    padding: 21px 0 24px 0px;
+
+  }
+
+  &.reg {
+    border-radius: 0px;
+    border: none;
+    color: $white
+  }
+
+  &.log {
+    background: $white;
+    border: none;
+
+    color: $lightGreen;
+    border: 1px solid $lightGreen;
+
+    &:hover {
+      background: $lightGray;
+    }
+
+    &:active {
+      background: $lightGray;
+    }
+  }
+
+  &.inner {
+    background: $lightGray;
+    border: 1px solid $black;
+    color: $black;
+
+    &:hover {
+      background: $lightGreen;
+      color: $white;
+    }
+
+    &:active {
+      background: $lightGreenActive;
+      color: $white;
+    }
+  }
+}
+
+.gen-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.2;
+  @media screen and (max-width: 768px) {
+    font-size: 32px;
+  }
+
+}
+
+.soon{
+  padding: 150px 40px;
+  max-width: 1000px;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  & .gen-title{
+    font-size: 72px;
+  }
+
+  &__wrapper-btn{
+    max-width: 200px;
+    margin: 50px auto;
+  }
+
+}
+
+

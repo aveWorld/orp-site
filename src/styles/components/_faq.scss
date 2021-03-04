@@ -1,0 +1,34 @@
+.faq {
+  &__wrapper {
+    max-width: 830px;
+    width: 100%;
+    margin: auto;
+  }
+
+
+  &__desc {
+    margin-top: 40px;
+
+    & p {
+      font-weight: 300;
+      font-family: $common-fonts;
+      font-size: 15px;
+      line-height: 1.2;
+
+      &:not(last-child) {
+        margin-bottom: 15px;
+      }
+
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+
+  }
+
+
+}

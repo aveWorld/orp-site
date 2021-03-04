@@ -1,0 +1,53 @@
+.govern {
+  padding: 114px 0 150px ;
+
+  @media screen and (max-width: 768px) {
+    padding: 80px 0 95px ;
+  }
+
+    &__wrapper {
+    max-width: 940px;
+    margin: auto;
+    width: 100%;
+    @media screen and (max-width: 992px) {
+      padding: 0 20px;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 0 10px;
+
+    }
+  }
+
+  &__desc {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    padding-right: 5px;
+    @media screen and (max-width: 768px) {
+      font-size: 18px;
+
+    }
+
+  }
+
+  &__wrapper-btn {
+    margin: 62px auto 0;
+    max-width: 258px;
+    width: 100%;
+  }
+
+  &__text {
+    margin-top: 52px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    @media screen and (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+}

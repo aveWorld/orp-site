@@ -1,0 +1,42 @@
+.video {
+
+  &__player {
+    margin-bottom: 66px;
+
+    iframe {
+      width: 100%;
+      height: 459px;
+      @media screen and (max-width: 768px) {
+        height: 259px;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 36px;
+    }
+  }
+
+  &__list {
+    max-width: 620px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+
+  }
+
+  &__slide {
+    background: $lightGray;
+    padding: 40px 10px 20px;
+    flex-basis: 43%;
+    border-radius: 11px;
+    display: flex;
+    height: 196px;
+    justify-content: center;
+    @media screen and (max-width: 768px) {
+      height: 100px;
+      flex-basis: 48%;
+
+
+    }
+  }
+}
