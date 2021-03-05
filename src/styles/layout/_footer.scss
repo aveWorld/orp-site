@@ -22,14 +22,21 @@
     flex-basis: 75%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   &__item {
     display: flex;
     flex-direction: column;
     margin: 0 5px 10px;
-  }
+    flex-basis: 15%;
+    @media screen and (max-width: 768px) {
+      flex-basis: 45%;
+      margin: 0 5px 10px;
+
+    }
+
+    }
 
   &__anchor {
     font-weight: 400;
@@ -52,7 +59,7 @@
       background: $black;
       width: 100%;
       bottom: -1px;
-      right: 0px;
+      right: 0;
       transform-origin: right;
       transform: scaleX(0);
 
@@ -127,6 +134,8 @@
 
   &__social {
     display: flex;
+    align-items: center;
+
     @media screen and (max-width: 768px) {
       margin-top: 20px;
     }
@@ -142,7 +151,31 @@
 
   &__social-list {
     margin-left: 22px;
+    display: flex;
+    align-items: center;
   }
+
+  &__social-item{
+    width: 44px;
+    height: 44px;
+    &:not(last-child){
+      margin-right: 10px;
+    }
+    svg{
+      width: 44px;
+      height: 44px;
+    }
+    @media screen and (max-width: 768px) {
+      width: 34px;
+      height: 34px;
+
+      svg{
+        width: 34px;
+        height: 34px;
+      }
+    }
+
+    }
 
 
 }

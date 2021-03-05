@@ -3,12 +3,12 @@
   &__player {
     margin-bottom: 66px;
 
-    iframe {
+      background: $Gray;
       width: 100%;
       height: 459px;
       @media screen and (max-width: 768px) {
         height: 259px;
-      }
+
     }
 
     @media screen and (max-width: 768px) {

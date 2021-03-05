@@ -3,10 +3,15 @@ import { Link, NavLink } from 'react-router-dom';
 import { ReactSVG } from 'react-svg';
 import Button from '../../Button';
 import logo from '../../../assets/image/logo.svg';
+import Modal from '../../Modall';
 // import
 const Header = () => {
   const [classActive, setClassActive] = useState('');
-
+  const [isShow, setIsShow] = useState(false);
+  const togglePopup = () => {
+    document.body.classList.toggle('hideScroll');
+    setIsShow(!isShow);
+  };
   const toogleClass = () => {
     if (window.innerWidth <= 768) {
       document.body.classList.toggle('hideScroll');
@@ -27,10 +32,17 @@ const Header = () => {
           <Link activeClassName="active" to="/soon" className="header__item" onClick={toogleClass}>Developers</Link>
           <NavLink activeClassName="active" to="entrepreneurs" className="header__item" onClick={toogleClass}>Entrepreneurs</NavLink>
           <NavLink activeClassName="active" to="governance" className="header__item" onClick={toogleClass}>Governance</NavLink>
-          <Link activeClassName="active" to="/" className="header__item" onClick={toogleClass}>Community</Link>
+          <Link activeClassName="active" to="soon" className="header__item" onClick={toogleClass}>Community</Link>
           <NavLink activeClassName="active" to="about" className="header__item" onClick={toogleClass}>About</NavLink>
-          <div className="header__wrapper-btn" onClick={toogleClass}>
-            <Button label="Use ORP" customClass="reg-top" handleClick={() => {}} />
+          <div className="header__wrapper-btn">
+            <Button label="Use ORP" customClass="reg-top" handleClick={() => togglePopup()} />
+            {isShow && (
+            <Modal
+              label="App Coming Soon - Inquiries can be sent to"
+              anchor={{ href: 'mailto:m@openreforestation.org', label: 'openreforestation.org' }}
+              close={() => togglePopup()}
+            />
+            )}
           </div>
         </div>
         <div className={`header__burger ${classActive}`} onClick={toogleClass}>
