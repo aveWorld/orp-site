@@ -17,6 +17,7 @@
   &__wrapper{
     background: white;
     padding: 40px;
+    text-align: center;
     background: $white;
     max-width: 500px;
     width: 100%;
@@ -39,7 +40,7 @@
 
   &__close{
     position: absolute;
-    right: 15px;
+    right: 25px;
     cursor: pointer;
     top: 15px;
     &:after{

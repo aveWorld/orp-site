@@ -16,12 +16,12 @@ const OrpAbout = ({ refProp }) => (
     </div>
     <div className="about__video">
       {/* eslint-disable-next-line jsx-a11y/iframe-has-title */}
-      <iframe
-        src="https://www.youtube.com/embed/FWi2bn40ma4"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      />
+      {/* <iframe */}
+      {/*  src="https://www.youtube.com/embed/FWi2bn40ma4" */}
+      {/*  frameBorder="0" */}
+      {/*  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" */}
+      {/*  allowFullScreen */}
+      {/* /> */}
     </div>
   </div>
 );
