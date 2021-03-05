@@ -28,11 +28,11 @@ const Header = () => {
           </Link>
         </div>
         <div className={`header__nav ${classActive}`}>
-          <Link activeClassName="active" to="/soon" className="header__item" onClick={toogleClass}>Products</Link>
-          <Link activeClassName="active" to="/soon" className="header__item" onClick={toogleClass}>Developers</Link>
+          <Link to="/soon" className="header__item" onClick={toogleClass}>Products</Link>
+          <Link to="/soon" className="header__item" onClick={toogleClass}>Developers</Link>
           <NavLink activeClassName="active" to="entrepreneurs" className="header__item" onClick={toogleClass}>Entrepreneurs</NavLink>
           <NavLink activeClassName="active" to="governance" className="header__item" onClick={toogleClass}>Governance</NavLink>
-          <Link activeClassName="active" to="soon" className="header__item" onClick={toogleClass}>Community</Link>
+          <Link to="soon" className="header__item" onClick={toogleClass}>Community</Link>
           <NavLink activeClassName="active" to="about" className="header__item" onClick={toogleClass}>About</NavLink>
           <div className="header__wrapper-btn">
             <Button label="Use ORP" customClass="reg-top" handleClick={() => togglePopup()} />

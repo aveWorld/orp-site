@@ -12,7 +12,7 @@ const ComingSoon = () => {
           Coming Soon
         </h2>
         <div className="soon__wrapper-btn">
-          <Button label="Back" customClass="" handleClick={() => history.goBack()} />
+          <Button label="Back" customClass="" handleClick={() => history.push('/')} />
         </div>
       </div>
     </section>

@@ -136,15 +136,16 @@ const HomePage = () => {
               <span className="gen">SDKs and APIs</span>
             </Link>
           </div>
-
         </div>
         <div className="homepage__five-block">
           <h3 className="homepage__sub-title">A global ecosystem for a global crisis.</h3>
           <div className="homepage__wrap-desc second">
             <div className="homepage__desc bold">
-              The business of planting trees is going to be one of the biggest climate stories of the next 20 years.
+              {/* eslint-disable-next-line react/no-unescaped-entities */}
+              "The business of planting trees is going to be one of the biggest climate stories of the next 20 years."
             </div>
-            <div className="homepage__desc italic"> Justin Adam, managing director for global lands at The Nature Conservancy</div>
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
+            <div className="homepage__desc italic"> - Justin Adam, managing director for global lands at The Nature Conservancy</div>
           </div>
           <div className="homepage__eco">
             <Link className="homepage__eco-item">
@@ -153,7 +154,6 @@ const HomePage = () => {
             </Link>
             <Link className="homepage__eco-item">
               <ReactSVG src={iconeSocial2} />
-
               <span>Twitter</span>
             </Link>
             <Link
