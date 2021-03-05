@@ -24,7 +24,7 @@ const Footer = () => (
             <span className="footer__anchor  main">Developers</span>
             <Link className="footer__anchor" to="soon">Whitepaper</Link>
             <Link className="footer__anchor" to="soon">Documentation</Link>
-            <Link className="footer__anchor" target="_blank" to="https://github.com/open-reforestation-protocol">Github</Link>
+            <a className="footer__anchor" rel="noopener noreferrer" target="_blank" href="https://github.com/open-reforestation-protocol">Github</a>
           </div>
           <div className="footer__item">
             <span className="footer__anchor main">Entrepreneurs</span>
