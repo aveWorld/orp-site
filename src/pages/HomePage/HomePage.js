@@ -4,6 +4,14 @@ import { ReactSVG } from 'react-svg';
 import Button from '../../components/Button';
 import schem from '../../assets/image/schem.png';
 import logo from '../../assets/image/logo.svg';
+import icone1 from '../../assets/image/icone/keep.svg';
+import icone2 from '../../assets/image/icone/grass.svg';
+import icone3 from '../../assets/image/icone/draw.svg';
+import icone4 from '../../assets/image/icone/tree.svg';
+import iconeSocial1 from '../../assets/image/icone/discordsoc.svg';
+import iconeSocial2 from '../../assets/image/icone/twitersoc.svg';
+import iconeSocial3 from '../../assets/image/icone/handsoc.svg';
+import iconeSocial4 from '../../assets/image/icone/reditsoc.svg';
 import Modal from '../../components/Modall';
 
 const HomePage = () => {
@@ -14,6 +22,11 @@ const HomePage = () => {
       pathname: path,
       state: { pathStep: step },
     });
+  };
+
+  const togglePopup = () => {
+    document.body.classList.toggle('hideScroll');
+    setIsShow(!isShow);
   };
 
   return (
@@ -31,13 +44,14 @@ const HomePage = () => {
 
           </div>
           <div className="homepage__wrapper-panel">
-            <div className="homepage__wrapper-btn"><Button label="Use ORP" customClass="inner" handleClick={() => setIsShow(!isShow)} /></div>
+            <div className="homepage__wrapper-btn"><Button label="Use ORP" customClass="inner" handleClick={() => togglePopup()} /></div>
             <div className="homepage__wrapper-btn"><Button label="Documentation" customClass="inner" handleClick={() => clickToRoute('/about', 2)} /></div>
             <div className="homepage__wrapper-btn"><Button label="FAQ" customClass="inner" handleClick={() => clickToRoute('/about', 3)} /></div>
             {isShow && (
             <Modal
-              label='App Coming Soon- Inquiries can be sent to <a href="mailto:m@openreforestation.org">m@openreforestation.org</a>'
-              close={() => setIsShow(!isShow)}
+              label="App Coming Soon - Inquiries can be sent to"
+              anchor={{ href: 'mailto:m@openreforestation.org', label: 'openreforestation.org' }}
+              close={() => togglePopup()}
             />
             )}
           </div>
@@ -60,15 +74,17 @@ const HomePage = () => {
             </div>
           </div>
           <div className="homepage__tech">
-            <Link className="homepage__tech-anchor">
+            <Link className="homepage__tech-anchor" to="/">
               <span className="gen">Collateral Zone</span>
+              <ReactSVG src={icone1} />
               <span className="inner">
                 Back Projects
                 and Yield ORP.
               </span>
             </Link>
-            <Link className="homepage__tech-anchor">
+            <Link className="homepage__tech-anchor" to="/">
               <span className="gen">Reforester</span>
+              <ReactSVG src={icone2} />
               <span className="inner">
                 Open source
                 dashboard for
@@ -76,20 +92,22 @@ const HomePage = () => {
                 data.
               </span>
             </Link>
-            <Link className="homepage__tech-anchor">
+            <Link className="homepage__tech-anchor" to="/">
               <span
                 className="gen"
               >
                 Validator Area
               </span>
+              <ReactSVG src={icone3} />
               <span className="inner">
                 Verify and challenge
                 data to earn
                 network fees.
               </span>
             </Link>
-            <Link className="homepage__tech-anchor">
+            <Link className="homepage__tech-anchor" to="/">
               <span className="gen">Project Explorer</span>
+              <ReactSVG src={icone4} />
               <span className="inner">
                 Track all projects
                 across the globe.
@@ -129,16 +147,25 @@ const HomePage = () => {
             <div className="homepage__desc italic"> Justin Adam, managing director for global lands at The Nature Conservancy</div>
           </div>
           <div className="homepage__eco">
-            <Link className="homepage__eco-item"><span>Discord</span></Link>
             <Link className="homepage__eco-item">
+              <ReactSVG src={iconeSocial1} />
+              <span>Discord</span>
+            </Link>
+            <Link className="homepage__eco-item">
+              <ReactSVG src={iconeSocial2} />
+
               <span>Twitter</span>
             </Link>
             <Link
               className="homepage__eco-item"
             >
+              <ReactSVG src={iconeSocial3} />
+
               <span>Clubhouse</span>
             </Link>
             <Link className="homepage__eco-item">
+              <ReactSVG src={iconeSocial4} />
+
               <span>Reddit</span>
             </Link>
           </div>
