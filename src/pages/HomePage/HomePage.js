@@ -145,7 +145,7 @@ const HomePage = () => {
               "The business of planting trees is going to be one of the biggest climate stories of the next 20 years."
             </div>
             {/* eslint-disable-next-line react/no-unescaped-entities */}
-            <div className="homepage__desc italic"> "Justin Adam, managing director for global lands at The Nature Conservancy"</div>
+            <div className="homepage__desc italic"> - Justin Adam, managing director for global lands at The Nature Conservancy</div>
           </div>
           <div className="homepage__eco">
             <Link className="homepage__eco-item">
