@@ -1,11 +1,11 @@
 .govern {
-  padding: 114px 0 150px ;
+  padding: 114px 0 150px;
 
   @media screen and (max-width: 768px) {
-    padding: 80px 0 95px ;
+    padding: 80px 0 95px;
   }
 
-    &__wrapper {
+  &__wrapper {
     max-width: 940px;
     margin: auto;
     width: 100%;
@@ -14,7 +14,14 @@
     }
     @media screen and (max-width: 768px) {
       padding: 0 10px;
+    }
+  }
 
+  &__ul {
+    margin-top: 10px;
+    margin-left: 40px;
+    & > li {
+      margin-top: 5px;
     }
   }
 
@@ -26,9 +33,7 @@
     padding-right: 5px;
     @media screen and (max-width: 768px) {
       font-size: 18px;
-
     }
-
   }
 
   &__wrapper-btn {

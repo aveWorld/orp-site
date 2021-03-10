@@ -14,51 +14,102 @@ const Footer = () => (
         <div className="footer__nav">
           <div className="footer__item">
             <span className="footer__anchor main">Protocol</span>
-            <Link className="footer__anchor" to="/soon">Reforester</Link>
-            <Link className="footer__anchor" to="/soon">Collateral Zone</Link>
-            <Link className="footer__anchor" to="/soon">Validator Area</Link>
-            <Link className="footer__anchor" to="/soon">Project Explorer</Link>
-            <Link className="footer__anchor" to="/soon">Documentation</Link>
+            <Link className="footer__anchor" to="/soon">
+              Reforester
+            </Link>
+            <Link className="footer__anchor" to="/soon">
+              Collateral Zone
+            </Link>
+            <Link className="footer__anchor" to="/soon">
+              Validator Area
+            </Link>
+            <Link className="footer__anchor" to="/soon">
+              Project Explorer
+            </Link>
+            <Link className="footer__anchor" to="/soon">
+              Documentation
+            </Link>
           </div>
           <div className="footer__item">
             <span className="footer__anchor  main">Developers</span>
-            <Link className="footer__anchor" to="soon">Whitepaper</Link>
-            <Link className="footer__anchor" to="soon">Documentation</Link>
-            <a className="footer__anchor" rel="noopener noreferrer" target="_blank" href="https://github.com/open-reforestation-protocol">Github</a>
+            <Link className="footer__anchor" to="soon">
+              Whitepaper
+            </Link>
+            <Link className="footer__anchor" to="soon">
+              Documentation
+            </Link>
+            <a
+              className="footer__anchor"
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://github.com/open-reforestation-protocol"
+            >
+              Github
+            </a>
           </div>
           <div className="footer__item">
-            <span className="footer__anchor main">Entrepreneurs</span>
-            <Link className="footer__anchor" to="entrepreneurs">Value Proposition</Link>
-            <Link className="footer__anchor" to="entrepreneurs">Documentation</Link>
-
+            <span className="footer__anchor main">Get Involved</span>
+            <Link className="footer__anchor" to="/get-involved">
+              Value Proposition
+            </Link>
+            <Link className="footer__anchor" to="/get-involved">
+              Documentation
+            </Link>
           </div>
 
           <div className="footer__item">
-            <span className="footer__anchor main" to="governance">Governance</span>
-            <Link className="footer__anchor" to={{ pathname: '/governance', state: { pathStep: 1 } }}>ORP Token</Link>
-            <Link className="footer__anchor" to="governance">OCC</Link>
-            <Link className="footer__anchor" to="governance">Documentation</Link>
-            <Link className="footer__anchor" to="governance">Forum</Link>
-
+            <span className="footer__anchor main" to="governance">
+              Governance
+            </span>
+            <Link
+              className="footer__anchor"
+              to={{ pathname: '/governance', state: { pathStep: 1 } }}
+            >
+              ORP Token
+            </Link>
+            <Link className="footer__anchor" to="governance">
+              OCC
+            </Link>
+            <Link className="footer__anchor" to="governance">
+              Documentation
+            </Link>
+            <Link className="footer__anchor" to="governance">
+              Forum
+            </Link>
           </div>
           <div className="footer__item">
             <span className="footer__anchor main">Community</span>
-            <Link className="footer__anchor" to="/">Twitter</Link>
-            <Link className="footer__anchor" to="/">Discord</Link>
-            <Link className="footer__anchor" to="/">Reddit</Link>
-            <Link className="footer__anchor" to="/">Clubhouse</Link>
+            <Link className="footer__anchor" to="/">
+              Twitter
+            </Link>
+            <Link className="footer__anchor" to="/">
+              Discord
+            </Link>
+            <Link className="footer__anchor" to="/">
+              Reddit
+            </Link>
+            <Link className="footer__anchor" to="/">
+              Clubhouse
+            </Link>
           </div>
           <div className="footer__item main">
             <span className="footer__anchor main">About</span>
-            <Link className="footer__anchor" to={{ pathname: '/about', state: { pathStep: 1 } }}>Blog</Link>
-            <Link className="footer__anchor" to={{ pathname: '/about', state: { pathStep: 2 } }}>Documentation</Link>
+            <Link className="footer__anchor" to={{ pathname: '/about', state: { pathStep: 1 } }}>
+              Blog
+            </Link>
+            <Link className="footer__anchor" to={{ pathname: '/about', state: { pathStep: 2 } }}>
+              Documentation
+            </Link>
             <Link className="footer__anchor" to={{ pathname: '/about', state: { pathStep: 3 } }}>
               FAQ
             </Link>
-            <Link className="footer__anchor" to="/">Team</Link>
-            <Link className="footer__anchor" to="/">How it Works</Link>
+            <Link className="footer__anchor" to="/">
+              Team
+            </Link>
+            <Link className="footer__anchor" to="/">
+              How it Works
+            </Link>
           </div>
-
         </div>
         {/* <div className="footer__reg"> */}
         {/*  <Button label="Register" customClass="reg" handleClick={() => {}} /> */}
@@ -74,12 +125,16 @@ const Footer = () => (
             <Link to="/" className="footer__social-item">
               <ReactSVG src={icone1} />
             </Link>
-            <Link to="/" className="footer__social-item">
+            <a
+              href="https://twitter.com/ReforestClean"
+              className="footer__social-item"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <ReactSVG src={icone2} />
-            </Link>
+            </a>
             <Link to="/" className="footer__social-item">
               <ReactSVG src={icone3} />
-
             </Link>
             <Link to="/" className="footer__social-item">
               <ReactSVG src={icone4} />

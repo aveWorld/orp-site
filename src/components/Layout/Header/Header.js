@@ -28,20 +28,50 @@ const Header = () => {
           </Link>
         </div>
         <div className={`header__nav ${classActive}`}>
-          <Link to="/soon" className="header__item" onClick={toogleClass}>Products</Link>
-          <Link to="/soon" className="header__item" onClick={toogleClass}>Developers</Link>
-          <NavLink activeClassName="active" to="entrepreneurs" className="header__item" onClick={toogleClass}>Entrepreneurs</NavLink>
-          <NavLink activeClassName="active" to="governance" className="header__item" onClick={toogleClass}>Governance</NavLink>
-          <Link to="soon" className="header__item" onClick={toogleClass}>Community</Link>
-          <NavLink activeClassName="active" to="about" className="header__item" onClick={toogleClass}>About</NavLink>
+          <Link to="/soon" className="header__item" onClick={toogleClass}>
+            Products
+          </Link>
+          <Link to="/soon" className="header__item" onClick={toogleClass}>
+            Developers
+          </Link>
+          <NavLink
+            activeClassName="active"
+            to="/get-involved"
+            className="header__item"
+            onClick={toogleClass}
+          >
+            Get Involved
+          </NavLink>
+          <NavLink
+            activeClassName="active"
+            to="governance"
+            className="header__item"
+            onClick={toogleClass}
+          >
+            Governance
+          </NavLink>
+          <Link to="soon" className="header__item" onClick={toogleClass}>
+            Community
+          </Link>
+          <NavLink
+            activeClassName="active"
+            to="about"
+            className="header__item"
+            onClick={toogleClass}
+          >
+            About
+          </NavLink>
           <div className="header__wrapper-btn">
             <Button label="Use ORP" customClass="reg-top" handleClick={() => togglePopup()} />
             {isShow && (
-            <Modal
-              label="App Coming Soon - Inquiries can be sent to"
-              anchor={{ href: 'mailto:m@openreforestation.org', label: 'm@openreforestation.org' }}
-              close={() => togglePopup()}
-            />
+              <Modal
+                label="App Coming Soon - Inquiries can be sent to"
+                anchor={{
+                  href: 'mailto:m@openreforestation.org',
+                  label: 'm@openreforestation.org',
+                }}
+                close={() => togglePopup()}
+              />
             )}
           </div>
         </div>
@@ -50,7 +80,6 @@ const Header = () => {
           <span />
           <span />
         </div>
-
       </div>
     </header>
   );
