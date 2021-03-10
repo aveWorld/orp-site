@@ -12,7 +12,11 @@ export default function Header() {
           <ReactSVG src={logo} />
         </Link>
         <span className="add-header__text">
-          The Open Reforestation Protocol <br /> Unique Selling Proposition for Entrepreneurs
+          The Open Reforestation Protocol
+          {' '}
+          <br />
+          {' '}
+          Unique Selling Proposition for Entrepreneurs
         </span>
       </div>
     </header>

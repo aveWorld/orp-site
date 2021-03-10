@@ -11,7 +11,8 @@ const OrpAbout = ({ refProp }) => (
     </p>
     <div className="about__list">
       <div className="about__punk">
-        ORP inaugurates a paradigm shift in reforestation management:{' '}
+        ORP inaugurates a paradigm shift in reforestation management:
+        {' '}
       </div>
       <div className="about__punk">
         - Standardized data structure for all reforestation projects

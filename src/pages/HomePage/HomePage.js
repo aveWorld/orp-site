@@ -148,6 +148,7 @@ const HomePage = () => {
             <div className="homepage__desc bold">
               {/* eslint-disable-next-line react/no-unescaped-entities */}
               "The business of planting trees is going to be one of the biggest climate stories of
+              {/* eslint-disable-next-line react/no-unescaped-entities */}
               the next 20 years."
             </div>
             {/* eslint-disable-next-line react/no-unescaped-entities */}

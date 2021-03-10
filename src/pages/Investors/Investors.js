@@ -21,24 +21,28 @@ export default function Investors() {
           <p className="add-page__text">
             Restoring degraded and deforested lands is not only a boon for the environment but a
             lucrative opportunity for investors looking to make a difference in the world. At
-            present, there are roughly{' '}
+            present, there are roughly
+            {' '}
             <a
               href="https://www.unep.org/news-and-stories/story/countries-commit-restore-global-land-area-size-china"
               target="_blank"
               rel="noopener noreferrer"
             >
               1 billion hectares
-            </a>{' '}
+            </a>
+            {' '}
             of land earmarked for restoration by the international community. Reforestation derives
             much of its value from the creation of carbon credits, the demand for which is
-            increasing dramatically.{' '}
+            increasing dramatically.
+            {' '}
             <a
               href="https://www.mckinsey.com/business-functions/sustainability/our-insights/a-blueprint-for-scaling-voluntary-carbon-markets-to-meet-the-climate-challenge"
               target="_blank"
               rel="noopener noreferrer"
             >
               McKinsey & Company
-            </a>{' '}
+            </a>
+            {' '}
             estimate that demand for carbon credits could increase by a factor of 15 or more (to $50
             billion) by 2030.
           </p>

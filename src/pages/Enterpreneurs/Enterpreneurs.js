@@ -11,7 +11,9 @@ export default function Enterpreneurs() {
         <div className="add-page__wrapper">
           <div className="add-page__sentence">
             <p className="bold italic">
+              {/* eslint-disable-next-line react/no-unescaped-entities */}
               "The business of planting trees is going to be one of the biggest climate stories of
+              {/* eslint-disable-next-line react/no-unescaped-entities */}
               the next 20 years."
             </p>
             <p>
@@ -21,14 +23,16 @@ export default function Enterpreneurs() {
           </div>
           <p className="add-page__text">
             The United Nations’ Decade of Restoration estimates that the emerging reforestation
-            sector could command{' '}
+            sector could command
+            {' '}
             <a
               href="https://www.unep.org/news-and-stories/story/countries-commit-restore-global-land-area-size-china?_ga=2.9408821.1854706521.1606574879-1526955355.1606574879"
               target="_blank"
               rel="noopener noreferrer"
             >
               a trillion dollars
-            </a>{' '}
+            </a>
+            {' '}
             over the next 10 years. Current gaps in the industry’s MRV framework—piecemeal project
             monitoring, inconsistent data reporting methodologies, and disjointed verification
             standards—represent an opportunity for entrepreneurs to capitalize on this influx in
@@ -59,14 +63,16 @@ export default function Enterpreneurs() {
             The third and by no means final use case of the ORP involves the minting and trading of
             data-backed carbon credits. ORP automatically mints Open Carbon Credits (OCCs) based on
             reforestation data. OCCs are voluntary emissions reductions, and therefore will join a
-            carbon market that has been growing at about{' '}
+            carbon market that has been growing at about
+            {' '}
             <a
               href="https://www.spglobal.com/platts/en/market-insights/latest-news/coal/092220-voluntary-carbon-market-grows-6-on-year-in-2019-ecosystem-marketplace#:~:text=The%20cumulative%20market%20volume%20in,exceeding%20%245.5%20billion%2C%20it%20said."
               target="_blank"
               rel="noopener noreferrer"
             >
               6% per year
-            </a>{' '}
+            </a>
+            {' '}
             as of 2019. OCCs are based on immutable blockchain data and do not depend on a
             centralized authority to represent their value. Furthermore, OCCs are “burned” when
             used, thereby solving the trenchant problem of double-counting that has been plaguing

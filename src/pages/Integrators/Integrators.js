@@ -25,14 +25,16 @@ export default function Integrators() {
           </div>
           <p className="add-page__text">
             The United Nations’ Decade of Restoration estimates that the emerging reforestation
-            sector could command{' '}
+            sector could command
+            {' '}
             <a
               href="https://www.unep.org/news-and-stories/story/countries-commit-restore-global-land-area-size-china?_ga=2.9408821.1854706521.1606574879-1526955355.1606574879"
               target="_blank"
               rel="noopener noreferrer"
             >
               a trillion dollars
-            </a>{' '}
+            </a>
+            {' '}
             over the next 10 years. Current gaps in the industry’s MRV framework -- piecemeal
             project monitoring, inconsistent data reporting methodologies, and disjointed
             verification standards--represent an opportunity for emerging technologies to capitalize
@@ -41,7 +43,9 @@ export default function Integrators() {
             mount a coordinated defense against anthropogenic climate change.
           </p>
           <p className="add-page__text">
-            <span className="bold">Here’s how:</span> The ORP acts as a decentralized ledger of
+            <span className="bold">Here’s how:</span>
+            {' '}
+            The ORP acts as a decentralized ledger of
             reforestation data. This means that reforestation projects using the protocol provide
             verifiable and transparent data on the progress of their reforestation projects. The
             data that project operators upload onto the protocol (usually referencing the number of
