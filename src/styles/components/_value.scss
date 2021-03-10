@@ -18,10 +18,11 @@
       margin-bottom: 50px;
     }
 
-
     & p {
       margin-top: 25px;
-
+    }
+    & > p > span {
+      font-weight: bold;
     }
   }
 
@@ -35,16 +36,26 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-
     }
-
   }
 
   &__doc {
-    background: $lightGray;
+    background: $lightBlue;
+    display: flex;
+    align-items: center;
+    padding-top: 13px;
+    flex-direction: column;
     border-radius: 6px;
-    height: 187px;
+    min-height: 187px;
     flex-basis: 26%;
+    &__text {
+      color: $white;
+      font-weight: bold;
+      text-align: center;
+      font-size: 13px;
+      line-height: 16px;
+      padding-top: 10px;
+    }
     @media screen and (max-width: 768px) {
       min-height: 150px;
       margin-top: 10px;
@@ -52,7 +63,5 @@
       width: 250px;
       flex-basis: 100%;
     }
-
   }
-
 }

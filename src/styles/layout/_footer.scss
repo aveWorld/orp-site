@@ -1,11 +1,10 @@
 .footer {
   padding: 49px 55px 92px 80px;
-  background: $lightGray;
+  background: $lightBlack;
   overflow: hidden;
   @media screen and (max-width: 768px) {
     padding: 39px 25px 52px 30px;
   }
-
 
   &__top {
     display: flex;
@@ -13,9 +12,7 @@
     padding-bottom: 36px;
     @media screen and (max-width: 768px) {
       flex-direction: column;
-
     }
-
   }
 
   &__nav {
@@ -26,6 +23,7 @@
   }
 
   &__item {
+    color: $white;
     display: flex;
     flex-direction: column;
     margin: 0 5px 10px;
@@ -33,12 +31,11 @@
     @media screen and (max-width: 768px) {
       flex-basis: 45%;
       margin: 0 5px 10px;
-
     }
-
-    }
+  }
 
   &__anchor {
+    color: $white;
     font-weight: 400;
     font-size: 15px;
     line-height: 1.5;
@@ -52,17 +49,16 @@
     }
 
     &:after {
-      transition: transform .75s;
+      transition: transform 0.75s;
       position: absolute;
-      content: "";
+      content: '';
       height: 2px;
-      background: $black;
+      background: $white;
       width: 100%;
       bottom: -1px;
       right: 0;
       transform-origin: right;
       transform: scaleX(0);
-
     }
 
     &:hover {
@@ -84,7 +80,6 @@
     display: flex;
     flex-direction: column;
     width: 131px;
-
 
     button:last-child {
       margin-top: 16px;
@@ -111,11 +106,10 @@
     @media screen and (max-width: 768px) {
       flex-direction: column;
     }
-
   }
 
   &__line {
-    background: $Gray;
+    background: $white;
     position: absolute;
     left: 0;
     width: 100vw;
@@ -128,8 +122,7 @@
     font-size: 15px;
     line-height: 1.5;
     letter-spacing: -0.02px;
-    color: $black;
-
+    color: $white;
   }
 
   &__social {
@@ -145,7 +138,7 @@
       font-size: 15px;
       line-height: 1.5;
       letter-spacing: -0.02px;
-      color: $black;
+      color: $white;
     }
   }
 
@@ -155,13 +148,13 @@
     align-items: center;
   }
 
-  &__social-item{
+  &__social-item {
     width: 44px;
     height: 44px;
-    &:not(last-child){
+    &:not(last-child) {
       margin-right: 10px;
     }
-    svg{
+    svg {
       width: 44px;
       height: 44px;
     }
@@ -169,13 +162,10 @@
       width: 34px;
       height: 34px;
 
-      svg{
+      svg {
         width: 34px;
         height: 34px;
       }
     }
-
-    }
-
-
+  }
 }

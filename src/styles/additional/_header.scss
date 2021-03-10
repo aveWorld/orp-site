@@ -1,0 +1,36 @@
+.add-header {
+  background: $lightBlack;
+  padding: 5px 0;
+
+  &__wrapper {
+    display: flex;
+    max-width: 900px;
+    margin: auto;
+    align-items: center;
+  }
+
+  &__link {
+    & svg {
+      width: 200px;
+      height: auto;
+    }
+    @media screen and (max-width: 576px) {
+      & svg {
+        width: 130px;
+        height: auto;
+      }
+    }
+  }
+
+  &__text {
+    font-weight: bold;
+    color: $white;
+    max-width: 600px;
+    @media screen and (max-width: 576px) {
+      font-size: 20px;
+    }
+    @media screen and (max-width: 400px) {
+      font-size: 18px;
+    }
+  }
+}
