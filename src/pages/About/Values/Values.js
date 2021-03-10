@@ -27,12 +27,12 @@ const Values = ({ refProp }) => (
           behavior.
         </p>
         <p>
-          <span>Longevity </span>- Reforestation data is stored on the blockchain forever, and can
-          never be changed or hidden from stakeholders. Longevity of reforestation project
-          information is particularly important in carbon markets, where accurate and ongoing
-          project monitoring is the foundation of carbon credit value. Furthermore, ORP will provide
-          entire life-cycle monitoring of all projects using the protocol as a means of preventing
-          premature forest destruction.
+          Longevity - Reforestation data is stored on the blockchain forever, and can never be
+          changed or hidden from stakeholders. Longevity of reforestation project information is
+          particularly important in carbon markets, where accurate and ongoing project monitoring is
+          the foundation of carbon credit value. Furthermore, ORP will provide entire life-cycle
+          monitoring of all projects using the protocol as a means of preventing premature forest
+          destruction.
         </p>
       </div>
       <h2 className="gen-title" ref={refProp}>
