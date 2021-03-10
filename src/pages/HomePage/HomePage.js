@@ -119,7 +119,7 @@ const HomePage = () => {
           </div>
         </div>
         <div className="homepage__four-block">
-          <h3 className="homepage__sub-title">Jumpstarting Climate Tech 2.0</h3>
+          <h3 className="homepage__sub-title">Climate Tech 2.0</h3>
           <div className="homepage__climate">
             <Link className="homepage__climate-item">
               <ReactSVG src={trees} />

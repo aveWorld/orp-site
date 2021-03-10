@@ -19,7 +19,7 @@
   }
 
   &__btn {
-    padding: 16px;
+    padding: 20px 16px;
   }
 
   &__title {
@@ -42,6 +42,10 @@
     }
     @media screen and (max-width: 576px) {
       width: 328px;
+      height: 200px;
+    }
+    @media screen and (max-width: 400px) {
+      width: 218px;
       height: 200px;
     }
   }
@@ -87,13 +91,19 @@
       display: block;
       margin: 20px auto 0px;
     }
+    &__title {
+      font-size: 48px;
+      @media screen and (max-width: 400px) {
+        font-size: 42px;
+      }
+    }
   }
 
   &__docs {
     display: flex;
     justify-content: space-between;
     max-width: 600px;
-    margin: 130px auto 0;
+    margin: 82px auto 0;
     @media screen and (max-width: 768px) {
       margin: 22px auto 0;
       flex-direction: column;

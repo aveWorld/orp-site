@@ -11,14 +11,14 @@ const Values = ({ refProp }) => (
       <div className="value__desc">
         {/* eslint-disable react/jsx-one-expression-per-line */}
         <p>
-          <span>Transparency </span>- Transparency is woven into the DNA of ORP, from project
-          monitoring to reforestation data storage. Because reforestation projects are decentralized
-          and visible to all stakeholders—and also the public— ORP ensures that project operators
-          cannot disguise the truth.
+          Transparency - Transparency is woven into the DNA of ORP, from project monitoring to
+          reforestation data storage. Because reforestation projects are decentralized and visible
+          to all stakeholders—and also the public— ORP ensures that project operators cannot
+          disguise the truth.
         </p>
         <p>
-          <span>Inclusivity </span>- ORP creates an ecosystem that encourages wide participation by
-          project operators, investors, technology operators and NGOs to work harmoniously on carbon
+          Inclusivity - ORP creates an ecosystem that encourages wide participation by project
+          operators, investors, technology operators and NGOs to work harmoniously on carbon
           sequestration initiatives. The incentive model of ORP creates synergies between different
           stakeholders by encouraging collaboration and punishing bad actors. Pre-existing projects
           can seamlessly link to the protocol and unlock new value chains, in virtue of its
