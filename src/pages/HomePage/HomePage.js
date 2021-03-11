@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { ReactSVG } from 'react-svg';
 import Button from '../../components/Button';
-import schem from '../../assets/image/schem.png';
+import schem from '../../assets/image/schem.svg';
 import logo from '../../assets/image/logo.svg';
 import icone1 from '../../assets/image/icone/keep.svg';
 import icone2 from '../../assets/image/icone/grass.svg';
@@ -82,7 +82,7 @@ const HomePage = () => {
           </div>
 
           <div className="homepage__schem">
-            <img src={schem} alt="schem" />
+            <ReactSVG src={schem} />
           </div>
         </div>
         <div className="homepage__third-block">
@@ -121,44 +121,31 @@ const HomePage = () => {
         <div className="homepage__four-block">
           <h3 className="homepage__sub-title">Climate Tech 2.0</h3>
           <div className="homepage__climate">
-            <Link className="homepage__climate-item">
+            <Link className="homepage__climate-item" to="/">
               <ReactSVG src={trees} />
               <span className="gen">Jumpstarting the Reforestation Economy</span>
             </Link>
-            <Link className="homepage__climate-item">
+            <Link className="homepage__climate-item" to="/">
               <ReactSVG src={satelite} />
               <span className="gen">Technology Integrators</span>
             </Link>
-            <Link className="homepage__climate-item">
+            <Link className="homepage__climate-item" to="/">
               <ReactSVG src={connDots} />
               <span className="gen">Green Software Products </span>
               <span className="inner">
                 Already supporting reforestation? Connect with a project!
               </span>
             </Link>
-            <Link className="homepage__climate-item">
+            <Link className="homepage__climate-item" to="/">
               <ReactSVG src={tag} />
               <span className="gen">SDKs and APIs</span>
             </Link>
           </div>
         </div>
         <div className="homepage__five-block">
-          <h3 className="homepage__sub-title">A global ecosystem for a global crisis.</h3>
-          <div className="homepage__wrap-desc second">
-            <div className="homepage__desc bold">
-              {/* eslint-disable-next-line react/no-unescaped-entities */}
-              "The business of planting trees is going to be one of the biggest climate stories of
-              {/* eslint-disable-next-line react/no-unescaped-entities */}
-              the next 20 years."
-            </div>
-            {/* eslint-disable-next-line react/no-unescaped-entities */}
-            <div className="homepage__desc italic">
-              {' '}
-              - Justin Adam, managing director for global lands at The Nature Conservancy
-            </div>
-          </div>
+          <h3 className="homepage__sub-title">A Global Ecosystem For A Global Crisis</h3>
           <div className="homepage__eco">
-            <Link className="homepage__eco-item">
+            <Link className="homepage__eco-item" to="/">
               <ReactSVG src={iconeSocial1} />
               <span>Discord</span>
             </Link>
@@ -171,12 +158,12 @@ const HomePage = () => {
               <ReactSVG src={iconeSocial2} />
               <span>Twitter</span>
             </a>
-            <Link className="homepage__eco-item">
-              <ReactSVG src={iconeSocial3} />
+            <Link className="homepage__eco-item" to="/">
+              <img src={iconeSocial3} alt="" />
 
               <span>Clubhouse</span>
             </Link>
-            <Link className="homepage__eco-item">
+            <Link className="homepage__eco-item" to="/">
               <ReactSVG src={iconeSocial4} />
 
               <span>Reddit</span>

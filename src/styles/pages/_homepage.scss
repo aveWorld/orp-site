@@ -1,12 +1,12 @@
 .homepage {
-  padding: 0px 0 204px;
+  padding: 64px 0 88px;
   @media screen and (max-width: 768px) {
     padding: 0px 0 104px;
   }
   text-align: center;
 
   &__first-block {
-    margin-bottom: 58px;
+    margin-bottom: 130px;
     @media screen and (max-width: 768px) {
       margin-bottom: 88px;
     }
@@ -78,15 +78,16 @@
   &__schem {
     margin-top: 45px;
 
-    & img {
-      max-width: 650px;
+    & svg {
+      max-width: 800px;
       width: 100%;
+      height: auto;
       object-fit: cover;
     }
   }
 
   &__second-block {
-    margin-bottom: 78px;
+    margin-bottom: 144px;
     @media screen and (max-width: 768px) {
       margin-bottom: 48px;
     }
@@ -104,7 +105,7 @@
   &__tech-anchor {
     display: flex;
     flex-direction: column;
-    height: 238px;
+    min-height: 238px;
     flex-basis: 22%;
     background: $lightBlack;
     padding: 33px 15px 36px 15px;
@@ -155,6 +156,7 @@
   }
 
   &__climate-item {
+    border-radius: 10px;
     margin-top: 35px;
     padding: 26px 40px 26px 44px;
     flex-basis: 48%;
@@ -162,10 +164,9 @@
     display: flex;
     line-height: 29px;
     font-family: $common-fonts;
-    font-weight: 300;
     flex-direction: column;
     align-items: center;
-    background: $lightBlue;
+    background: $lightBlack;
     color: $white;
     @media screen and (max-width: 768px) {
       flex-basis: 100%;
@@ -211,6 +212,7 @@
   }
 
   &__eco {
+    margin-top: 32px;
     display: flex;
     justify-content: space-between;
     @media screen and (max-width: 768px) {

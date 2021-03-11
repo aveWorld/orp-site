@@ -1,5 +1,5 @@
 .involved {
-  padding: 111px 0 116px;
+  padding: 112px 0 324px;
 
   @media screen and (max-width: 768px) {
     padding: 91px 0 66px;
@@ -80,21 +80,87 @@
     }
   }
 
+  &__pdf {
+    margin-top: 66px;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+
+    @media screen and (max-width: 576px) {
+      flex-wrap: wrap;
+    }
+
+    & span {
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 43px;
+      margin-right: 88px;
+      @media screen and (max-width: 768px) {
+        margin-right: 48px;
+      }
+      @media screen and (max-width: 576px) {
+        flex-basis: 100%;
+      }
+    }
+
+    & button {
+      padding: 22px 34px;
+      max-width: 172px;
+      margin-right: 106px;
+      @media screen and (max-width: 768px) {
+        margin-right: 56px;
+      }
+      @media screen and (max-width: 576px) {
+        margin: 20px auto 0;
+      }
+    }
+  }
+
   &__block {
-    margin-top: 86px;
+    margin-top: 150px;
     &__text {
       padding-top: 28px;
     }
-    & button {
+    &__btn {
       color: $white;
       max-width: 132px;
       display: block;
-      margin: 20px auto 0px;
+      margin-left: 50px;
     }
     &__title {
-      font-size: 48px;
-      @media screen and (max-width: 400px) {
-        font-size: 42px;
+      display: flex;
+      align-items: center;
+      @media screen and (max-width: 768px) {
+        font-size: 40px;
+        flex-wrap: wrap;
+        & button {
+          margin: 20px auto 0;
+        }
+
+        &__text {
+          flex-basis: 100%;
+        }
+      }
+
+      &__text {
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 58px;
+        @media screen and (max-width: 400px) {
+          font-size: 40px;
+        }
+      }
+
+      &__logo {
+        background-color: $lightBlack;
+        padding: 15px 22px 10px;
+        border-radius: 10px;
+        margin-right: 40px;
+      }
+
+      & svg {
+        width: 70px;
+        height: 70px;
       }
     }
   }

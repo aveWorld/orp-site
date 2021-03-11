@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom';
 import Button from '../../components/Button';
 
 import logo from '../../assets/image/logo.svg';
-import Docs from '../../assets/image/icone/docs.svg';
-import Screen from '../../assets/image/icone/screen.svg';
+import Satelite from '../../assets/image/icone/satelite.svg';
+import ConnDots from '../../assets/image/icone/connDots.svg';
+import Palm from '../../assets/image/icone/Palm.svg';
 
 const GetInvoled = () => (
   <section className="involved">
@@ -32,7 +33,17 @@ const GetInvoled = () => (
           </Link>
         </div>
         <div className="involved__block">
-          <h3 className="involved__block__title">Project Operators</h3>
+          <div className="involved__block__title">
+            <div className="involved__block__title__logo">
+              <ReactSVG src={Palm} />
+            </div>
+            <h3 className="involved__block__title__text">Project Operators</h3>
+            <Button
+              label="Use ORP"
+              customClass="inner involved__block__btn"
+              handleClick={() => {}}
+            />
+          </div>
           <p className="involved__block__text">
             The Open Reforestation Protocol (ORP) is a solution for project operators hoping to
             digitize their reforestation efforts. The blockchain basis of the ORP introduces a novel
@@ -41,20 +52,19 @@ const GetInvoled = () => (
             reforestation projects, attracting more investment and leading to more trees being
             planted around the world.
           </p>
-          <Button label="Use ORP" customClass="" handleClick={() => {}} />
-          <div className="involved__docs">
-            <Link className="involved__doc">
-              <ReactSVG src={Docs} />
-              <span className="involved__doc__text">One Pager</span>
-            </Link>
-            <Link className="involved__doc">
-              <ReactSVG src={Screen} />
-              <span className="involved__doc__text">Slide Deck</span>
-            </Link>
+          <div className="involved__pdf">
+            <span>PDFs: </span>
+            <Button label="1 Pager" customClass="inner" handleClick={() => {}} />
+            <Button label="Slides" customClass="inner" handleClick={() => {}} />
           </div>
         </div>
         <div className="involved__block">
-          <h3 className="involved__block__title">Entrepreneurs</h3>
+          <div className="involved__block__title">
+            <div className="involved__block__title__logo">
+              <ReactSVG src={ConnDots} />
+            </div>
+            <h3 className="involved__block__title__text">Entrepreneurs</h3>
+          </div>
           <p className="involved__block__text">
             ORP provides entrepreneurs with an opportunity to integrate with the restoration
             economy. The protocol’s modernized reforestation system aligns the value chains of
@@ -62,19 +72,19 @@ const GetInvoled = () => (
             opportunity to build solutions on top of reforestation projects, or even integrate with
             the projects themselves.
           </p>
-          <div className="involved__docs">
-            <Link className="involved__doc">
-              <ReactSVG src={Docs} />
-              <span className="involved__doc__text">One Pager</span>
-            </Link>
-            <Link className="involved__doc">
-              <ReactSVG src={Screen} />
-              <span className="involved__doc__text">Slide Deck</span>
-            </Link>
+          <div className="involved__pdf">
+            <span>PDFs: </span>
+            <Button label="1 Pager" customClass="inner" handleClick={() => {}} />
+            <Button label="Slides" customClass="inner" handleClick={() => {}} />
           </div>
         </div>
         <div className="involved__block">
-          <h3 className="involved__block__title">Technology Integrators</h3>
+          <div className="involved__block__title">
+            <div className="involved__block__title__logo">
+              <ReactSVG src={Satelite} />
+            </div>
+            <h3 className="involved__block__title__text">Technology Integrators</h3>
+          </div>
           <p className="involved__block__text">
             ORP is a hub for global reforestation initiatives. As a reforestation technology
             provider, you have the opportunity to connect with ORP and connect your service to the
@@ -82,19 +92,19 @@ const GetInvoled = () => (
             improve the veracity of reforestation projects while also reaching the world’s largest
             audience of reforestation projects.
           </p>
-          <div className="involved__docs">
-            <Link className="involved__doc">
-              <ReactSVG src={Docs} />
-              <span className="involved__doc__text">One Pager</span>
-            </Link>
-            <Link className="involved__doc">
-              <ReactSVG src={Screen} />
-              <span className="involved__doc__text">Slide Deck</span>
-            </Link>
+          <div className="involved__pdf">
+            <span>PDFs: </span>
+            <Button label="1 Pager" customClass="inner" handleClick={() => {}} />
+            <Button label="Slides" customClass="inner" handleClick={() => {}} />
           </div>
         </div>
         <div className="involved__block">
-          <h3 className="involved__block__title">Investors</h3>
+          <div className="involved__block__title">
+            <div className="involved__block__title__logo">
+              <ReactSVG src={Satelite} />
+            </div>
+            <h3 className="involved__block__title__text">Investors</h3>
+          </div>
           <p className="involved__block__text">
             Restoring degraded and deforested lands is not only a boon for the environment but a
             lucrative opportunity for investors looking to make a difference in the world. ORP
@@ -102,15 +112,10 @@ const GetInvoled = () => (
             success would mitigate the severity of the climate crisis, improve the livelihoods of
             global communities, and create huge returns for early backers.
           </p>
-          <div className="involved__docs">
-            <Link className="involved__doc">
-              <ReactSVG src={Docs} />
-              <span className="involved__doc__text">One Pager</span>
-            </Link>
-            <Link className="involved__doc">
-              <ReactSVG src={Screen} />
-              <span className="involved__doc__text">Slide Deck</span>
-            </Link>
+          <div className="involved__pdf">
+            <span>PDFs: </span>
+            <Button label="1 Pager" customClass="inner" handleClick={() => {}} />
+            <Button label="Slides" customClass="inner" handleClick={() => {}} />
           </div>
         </div>
       </div>

@@ -134,7 +134,7 @@ const Footer = () => (
               <ReactSVG src={icone2} />
             </a>
             <Link to="/" className="footer__social-item">
-              <ReactSVG src={icone3} />
+              <img src={icone3} alt="clubhouse" />
             </Link>
             <Link to="/" className="footer__social-item">
               <ReactSVG src={icone4} />

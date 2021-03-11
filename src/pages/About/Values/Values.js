@@ -2,12 +2,17 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ReactSVG } from 'react-svg';
 import Docs from '../../../assets/image/icone/docs.svg';
+import Logo from '../../../assets/image/logo.svg';
 // import Docs from '../../../assets/image/icone/docs.svg';
 
 const Values = ({ refProp }) => (
   <section className="value">
     <div className="value__wrapper">
-      <h2 className="gen-title">Values</h2>
+      <h2 className="gen-title">
+        <ReactSVG src={Logo} />
+        {' '}
+        Values
+      </h2>
       <div className="value__desc">
         {/* eslint-disable react/jsx-one-expression-per-line */}
         <p>

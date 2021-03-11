@@ -1,8 +1,14 @@
 import React from 'react';
+import { ReactSVG } from 'react-svg';
+import Logo from '../../../assets/image/logo.svg';
 
 const OrpAbout = ({ refProp }) => (
   <div className="about__orp" ref={refProp}>
-    <h2 className="gen-title">About ORP</h2>
+    <h2 className="gen-title">
+      About
+      {' '}
+      <ReactSVG src={Logo} />
+    </h2>
     <p className="about__text">
       ORP provides the digital infrastructure for collecting, uploading, confirming, and visualizing
       reforestation data. ORP is an open-source and permissionless protocol for reforestation
