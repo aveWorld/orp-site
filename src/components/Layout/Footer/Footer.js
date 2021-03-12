@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import Button from '../../Button';
 import { ReactSVG } from 'react-svg';
-import icone1 from '../../../assets/image/icone/discord.svg';
+import icone1 from '../../../assets/image/icone/Medium.svg';
 import icone2 from '../../../assets/image/icone/twitter.svg';
-import icone3 from '../../../assets/image/icone/handsoc.svg';
+import icone3 from '../../../assets/image/icone/Instagram.svg';
 import icone4 from '../../../assets/image/icone/reddit.svg';
 
 const Footer = () => (
@@ -111,10 +110,6 @@ const Footer = () => (
             </Link>
           </div>
         </div>
-        {/* <div className="footer__reg"> */}
-        {/*  <Button label="Register" customClass="reg" handleClick={() => {}} /> */}
-        {/*  <Button label="Log in" customClass="log" handleClick={() => {}} /> */}
-        {/* </div> */}
       </div>
       <div className="footer__bottom">
         <div className="footer__line" />
@@ -134,7 +129,7 @@ const Footer = () => (
               <ReactSVG src={icone2} />
             </a>
             <Link to="/" className="footer__social-item">
-              <img src={icone3} alt="clubhouse" />
+              <ReactSVG src={icone3} />
             </Link>
             <Link to="/" className="footer__social-item">
               <ReactSVG src={icone4} />

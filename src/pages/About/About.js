@@ -4,6 +4,7 @@ import OrpAbout from './OrpAbout';
 import Values from './Values';
 import Faq from './Faq';
 import IntroAbout from './IntroAbout';
+import Docs from './Docs';
 
 const About = () => {
   const location = useLocation();
@@ -51,6 +52,7 @@ const About = () => {
         <IntroAbout />
         <OrpAbout refProp={myRef1} />
         <Values refProp={myRef2} />
+        <Docs />
         <Faq refProp={myRef3} />
       </div>
     </section>

@@ -13,9 +13,9 @@ import connDots from '../../assets/image/icone/connDots.svg';
 import satelite from '../../assets/image/icone/satelite.svg';
 import tag from '../../assets/image/icone/tag.svg';
 
-import iconeSocial1 from '../../assets/image/icone/discordsoc.svg';
+import iconeSocial1 from '../../assets/image/icone/Medium.svg';
 import iconeSocial2 from '../../assets/image/icone/twitersoc.svg';
-import iconeSocial3 from '../../assets/image/icone/handsoc.svg';
+import iconeSocial3 from '../../assets/image/icone/Instagram.svg';
 import iconeSocial4 from '../../assets/image/icone/reditsoc.svg';
 import Modal from '../../components/Modall';
 
@@ -74,7 +74,7 @@ const HomePage = () => {
         </div>
         <div className="homepage__second-block">
           <h3 className="homepage__sub-title">
-            Collaborative verification for any reforestation project
+            Collaborative Verification For Any Reforestation Project
           </h3>
           <div className="homepage__desc">
             The Open Reforestation Protocol (ORP) provides an open and accessible platform for
@@ -87,7 +87,7 @@ const HomePage = () => {
         </div>
         <div className="homepage__third-block">
           <h3 className="homepage__sub-title">
-            Digital Management for the Future of Reforestation
+            Digital Management For The Future of Reforestation
           </h3>
           <div className="homepage__wrap-desc">
             <div className="homepage__desc">
@@ -99,22 +99,22 @@ const HomePage = () => {
             <Link className="homepage__tech-anchor" to="/">
               <span className="gen">Collateral Zone</span>
               <ReactSVG src={icone1} />
-              <span className="inner">Back Projects and Yield ORP.</span>
+              <span className="inner">Back Projects and Yield ORP</span>
             </Link>
             <Link className="homepage__tech-anchor" to="/">
               <span className="gen">Reforester</span>
               <ReactSVG src={icone2} />
-              <span className="inner">Open source dashboard for uploading project data.</span>
+              <span className="inner">Open source dashboard for uploading project data</span>
             </Link>
             <Link className="homepage__tech-anchor" to="/">
               <span className="gen">Validator Area</span>
               <ReactSVG src={icone3} />
-              <span className="inner">Verify and challenge data to earn network fees.</span>
+              <span className="inner">Verify and challenge data to earn network fees</span>
             </Link>
             <Link className="homepage__tech-anchor" to="/">
               <span className="gen">Project Explorer</span>
               <ReactSVG src={icone4} />
-              <span className="inner">Track all projects across the globe.</span>
+              <span className="inner">Track all projects across the globe</span>
             </Link>
           </div>
         </div>
@@ -144,10 +144,13 @@ const HomePage = () => {
         </div>
         <div className="homepage__five-block">
           <h3 className="homepage__sub-title">A Global Ecosystem For A Global Crisis</h3>
+          <div className="homepage__desc homepage__five-block__desc">
+            Keep up with ORP on Social Media
+          </div>
           <div className="homepage__eco">
             <Link className="homepage__eco-item" to="/">
               <ReactSVG src={iconeSocial1} />
-              <span>Discord</span>
+              <span>Blog</span>
             </Link>
             <a
               className="homepage__eco-item"
@@ -159,9 +162,9 @@ const HomePage = () => {
               <span>Twitter</span>
             </a>
             <Link className="homepage__eco-item" to="/">
-              <img src={iconeSocial3} alt="" />
+              <ReactSVG src={iconeSocial3} />
 
-              <span>Clubhouse</span>
+              <span>Instagram</span>
             </Link>
             <Link className="homepage__eco-item" to="/">
               <ReactSVG src={iconeSocial4} />

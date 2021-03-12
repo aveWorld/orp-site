@@ -1,13 +1,13 @@
 .about {
   padding-top: 120px;
-  padding-bottom: 700px;
+  padding-bottom: 52px;
   @media screen and (max-width: 768px) {
     padding-top: 60px;
     padding-bottom: 100px;
   }
 
   &__wrapper {
-    max-width: 971px;
+    max-width: 923px;
     margin: auto;
     width: 100%;
     @media screen and (max-width: 992px) {
@@ -21,11 +21,25 @@
   &__sentence {
     background-color: $lightBlack;
     border-radius: 28px;
+    @media screen and (max-width: 992px) {
+      margin: 0 auto;
+      width: 550px;
+    }
+    @media screen and (max-width: 576px) {
+      margin: 0 auto;
+      width: 300px;
+    }
+    &__wrapper {
+      padding: 54px 105px 0 89px;
+      @media screen and (max-width: 576px) {
+        padding: 40px 20px 0;
+      }
+    }
     &__text {
-      padding: 70px 120px 0;
       letter-spacing: -0.015em;
-      font-weight: normal;
-      font-weight: $main-font-family;
+      font-weight: 400;
+      font-family: $main-font-family;
+      font-style: italic;
       font-size: 36px;
       line-height: 48px;
       color: $white;
@@ -35,14 +49,26 @@
       @media screen and (max-width: 768px) {
         font-size: 24px;
       }
-      @media screen and (max-width: 576px) {
-        padding: 50px 40px 0;
+
+      & span {
+        font-style: normal;
+        font-weight: 600;
       }
+    }
+    &__line {
+      width: 160px;
+      margin: 30px 0;
+      height: 6px;
+      background-color: $lightGreen;
     }
     &__logo {
       display: flex;
       justify-content: flex-end;
-      padding: 0 26px 38px 0;
+      margin-top: -25px;
+      padding: 0 14px 15px 0;
+      @media screen and (max-width: 576px) {
+        margin-top: 0px;
+      }
     }
     & svg {
       width: 128px;
@@ -83,20 +109,142 @@
     }
   }
 
+  &__docs {
+    margin-top: 144px;
+    &__wrapper {
+      max-width: 830px;
+      margin: 97px auto 0;
+    }
+    &__title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      & svg {
+        width: 174px;
+        height: auto;
+      }
+
+      @media screen and (max-width: 576px) {
+        flex-wrap: wrap;
+        margin: 97px auto 30px;
+      }
+    }
+
+    &__pdfs {
+      & h5 {
+        text-align: center;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 43px;
+      }
+
+      &__wrapper {
+        margin-top: 38px;
+        display: flex;
+        column-gap: 80px;
+
+        @media screen and (max-width: 768px) {
+          flex-wrap: wrap;
+          justify-content: center;
+          row-gap: 30px;
+        }
+
+        & a {
+          padding: 27px 10px 27px 10px;
+          font-size: 18px;
+          line-height: 22px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          @media screen and (max-width: 768px) {
+            max-width: 200px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
   &__orp {
-    padding: 0 25px;
-    max-width: 830px;
-    margin: 78px auto 0;
+    &__wrapper {
+      max-width: 830px;
+      margin: 97px auto 0;
+    }
+
+    &__block {
+      margin-top: 110px;
+      padding: 47px 26px 62px 50px;
+      border-radius: 28px;
+      background-color: $lightBlack;
+
+      @media screen and (max-width: 992px) {
+        margin: 110px auto 0;
+        width: 550px;
+      }
+
+      @media screen and (max-width: 576px) {
+        padding: 47px 26px 62px 26px;
+        margin: 110px auto 0;
+        width: 300px;
+      }
+
+      &__title {
+        display: flex;
+        margin-bottom: 12px;
+        & svg {
+          width: 174px;
+          height: auto;
+        }
+
+        & p {
+          color: $white;
+          font-size: 24px;
+          align-self: flex-end;
+          margin-bottom: 16px;
+        }
+
+        @media screen and (max-width: 576px) {
+          flex-wrap: wrap;
+        }
+      }
+
+      &__item {
+        display: flex;
+        align-items: center;
+        margin-left: 32px;
+        margin-top: 25px;
+
+        & svg {
+          width: 72px;
+          height: auto;
+        }
+
+        & p {
+          color: $white;
+          line-height: 29px;
+          font-size: 24px;
+          margin-left: 32px;
+          @media screen and (max-width: 576px) {
+            margin-left: 0px;
+            margin-top: 10px;
+          }
+        }
+
+        @media screen and (max-width: 576px) {
+          flex-wrap: wrap;
+          margin-left: 0px;
+        }
+      }
+    }
   }
 
   &__text {
     font-weight: 400;
-    margin-top: 50px;
+    margin-top: 28px;
     font-size: 24px;
     line-height: 1.2;
-    @media screen and (max-width: 768px) {
-      font-size: 18px;
-    }
   }
 
   &__list {

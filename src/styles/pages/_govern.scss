@@ -1,5 +1,5 @@
 .govern {
-  padding: 114px 0 150px;
+  padding: 87px 0 62px;
 
   @media screen and (max-width: 768px) {
     padding: 80px 0 95px;
@@ -17,42 +17,79 @@
     }
   }
 
-  &__ul {
-    margin-top: 10px;
-    margin-left: 40px;
-    & > li {
-      margin-top: 5px;
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & svg {
+      width: 174px;
+      height: auto;
+    }
+
+    @media screen and (max-width: 576px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__btn {
+    margin-top: 46px;
+    margin-bottom: 78px;
+
+    & a {
+      padding: 16px 0px 18px;
+      display: block;
+      margin: 0 auto;
+      font-size: 24px;
+      line-height: 29px;
+      max-width: 258px;
     }
   }
 
   &__desc {
-    margin-top: 30px;
-    font-weight: 400;
+    margin-top: 42px;
     font-size: 24px;
-    line-height: 1.2;
-    padding-right: 5px;
-    @media screen and (max-width: 768px) {
-      font-size: 18px;
+    line-height: 29px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 22px;
+    margin-bottom: 50px;
+    &__logo {
+      min-width: 125px;
+      min-height: 125px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      background-color: $lightBlack;
     }
-  }
 
-  &__wrapper-btn {
-    margin: 62px auto 0;
-    max-width: 258px;
-    width: 100%;
-  }
+    & h5 {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 29px;
+      margin-bottom: 20px;
+      @media screen and (max-width: 576px) {
+        margin-top: 10px;
+        margin-bottom: 40px;
+        font-size: 32px;
+        text-align: center;
+      }
+    }
 
-  &__text {
-    margin-top: 52px;
-  }
+    & p {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 29px;
+    }
 
-  &__title {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 1.2;
-    margin-bottom: 15px;
-    @media screen and (max-width: 768px) {
-      font-size: 18px;
+    @media screen and (max-width: 576px) {
+      flex-wrap: wrap;
+      justify-content: center;
     }
   }
 }

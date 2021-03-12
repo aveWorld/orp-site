@@ -1,34 +1,33 @@
 .faq {
+  margin-top: 240px;
   &__wrapper {
     max-width: 830px;
     width: 100%;
     margin: auto;
+
+    & h2 {
+      padding-bottom: 20px;
+    }
   }
 
-
   &__desc {
-    margin-top: 40px;
+    margin-top: 71px;
 
     & p {
-      font-weight: 300;
-      font-family: $common-fonts;
-      font-size: 15px;
+      font-weight: 400;
+      font-size: 24px;
       line-height: 1.2;
 
       &:not(last-child) {
         margin-bottom: 15px;
       }
-
     }
   }
 
   &__title {
     font-weight: 600;
-    font-size: 15px;
+    font-size: 24px;
     line-height: 1.2;
     margin-bottom: 15px;
-
   }
-
-
 }

@@ -3,7 +3,7 @@ import React from 'react';
 const Faq = ({ refProp }) => (
   <section className="faq" ref={refProp}>
     <div className="faq__wrapper">
-      <h2 className="gen-title">FAQ</h2>
+      <h2 className="gen-title">Frequently Asked Questions</h2>
       <div className="faq__desc">
         <h4 className="faq__title">What is ORP?</h4>
         <p>
