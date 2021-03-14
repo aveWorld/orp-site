@@ -1,5 +1,5 @@
 .involved {
-  padding: 112px 0 324px;
+  padding: 68px 0 102px;
 
   @media screen and (max-width: 768px) {
     padding: 91px 0 66px;
@@ -19,7 +19,13 @@
   }
 
   &__btn {
-    padding: 20px 16px;
+    padding: 26px 26px 28px 26px;
+    @media screen and (max-width: 400px) {
+      min-height: 86px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   &__title {
@@ -104,7 +110,7 @@
     }
 
     & button {
-      padding: 22px 34px;
+      padding: 26px 26px 28px 26px;
       max-width: 172px;
       margin-right: 106px;
       @media screen and (max-width: 768px) {
@@ -146,6 +152,9 @@
         font-weight: bold;
         font-size: 48px;
         line-height: 58px;
+        @media screen and (max-width: 768px) {
+          margin-top: 10px;
+        }
         @media screen and (max-width: 400px) {
           font-size: 40px;
         }

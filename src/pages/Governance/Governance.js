@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import { ReactSVG } from 'react-svg';
-import { Link } from 'react-router-dom';
+
 import Logo from '../../assets/image/logo.svg';
 import Icon1 from '../../assets/image/icone/OCC.svg';
 import Icon2 from '../../assets/image/icone/DAO.svg';

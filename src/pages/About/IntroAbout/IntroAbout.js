@@ -11,7 +11,9 @@ const IntroAbout = () => (
       </p>
       <div className="about__sentence__line" />
       <p className="about__sentence__text">
-        <span>Justin Adam,</span> managing director for global lands at The Nature Conservancy
+        <span>Justin Adam,</span>
+        {' '}
+        managing director for global lands at The Nature Conservancy
       </p>
     </div>
     <div className="about__sentence__logo">

@@ -1,7 +1,6 @@
 import React from 'react';
 import { ReactSVG } from 'react-svg';
 import Logo from '../../../assets/image/logo.svg';
-// import Docs from '../../../assets/image/icone/docs.svg';
 
 const Values = () => (
   <section className="value">
@@ -18,13 +17,19 @@ const Values = () => (
       <div className="value__block__line" />
       <div className="value__block__body">
         <p className="value__block__body__text">
-          <span>TRANSPARENCY</span> is woven into the DNA of ORP, from project monitoring to
+          <span>TRANSPARENCY</span>
+          {' '}
+          is woven into the DNA of ORP, from project monitoring to
           reforestation data storage. Because reforestation projects are decentralized and visible
           to all stakeholders—and also the public— ORP ensures that project operators cannot
           disguise the truth.
         </p>
         <p className="value__block__body__text">
-          ORP creates an <span>INCLUSIVE</span> ecosystem that encourages wide participation by
+          ORP creates an
+          {' '}
+          <span>INCLUSIVE</span>
+          {' '}
+          ecosystem that encourages wide participation by
           project operators, investors, technology operators and NGOs to work harmoniously on carbon
           sequestration initiatives. The incentive model of ORP creates synergies between different
           stakeholders by encouraging collaboration and punishing bad actors. Pre-existing projects
@@ -34,12 +39,15 @@ const Values = () => (
           behavior.
         </p>
         <p className="value__block__body__text">
-          <span>LONGEVITY</span> of reforestation project information is particularly important in
+          <span>LONGEVITY</span>
+          {' '}
+          of reforestation project information is particularly important in
           carbon markets, where accurate and ongoing project monitoring is the foundation of carbon
           credit value. Reforestation data is stored on the blockchain forever, and can never be
           changed or hidden from stakeholders. Furthermore, ORP will provide entire life-cycle
           monitoring of all projects using the protocol as a means of preventing premature forest
-          destruction.{' '}
+          destruction.
+          {' '}
         </p>
       </div>
     </div>
