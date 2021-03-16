@@ -1,34 +1,75 @@
 .faq {
+  margin-top: 194px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 45px 0px;
+  border-radius: 9px;
   &__wrapper {
-    max-width: 830px;
+    max-width: 870px;
+    padding: 0 20px;
     width: 100%;
     margin: auto;
+
+    & h2 {
+      padding-bottom: 20px;
+    }
   }
 
-
   &__desc {
-    margin-top: 40px;
+    margin-top: 71px;
 
-    & p {
-      font-weight: 300;
-      font-family: $common-fonts;
-      font-size: 15px;
-      line-height: 1.2;
+    &__content {
+      & p {
+        font-weight: 400;
+        padding-top: 20px;
+        font-size: 24px;
+        line-height: 1.2;
+      }
+
+      transition: display 0.4s ease-in-out;
 
       &:not(last-child) {
         margin-bottom: 15px;
       }
 
+      &--visible {
+        display: block;
+        animation-duration: 0.3s;
+        animation-name: slidein;
+        transform-origin: top;
+      }
+
+      &--hidden {
+        display: none;
+      }
+    }
+  }
+
+  @keyframes slidein {
+    from {
+      transform: scaleY(0);
+    }
+    to {
+      transform: scaleY(1);
     }
   }
 
   &__title {
-    font-weight: 600;
-    font-size: 15px;
+    font-weight: 900;
+    cursor: pointer;
+    display: flex;
+    font-size: 24px;
     line-height: 1.2;
     margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid $black;
 
+    &__icon {
+      margin-left: auto;
+      transform-origin: 50% 15px;
+      & svg {
+        width: 30px;
+        height: auto;
+      }
+    }
   }
-
-
 }

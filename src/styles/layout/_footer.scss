@@ -16,10 +16,13 @@
   }
 
   &__nav {
-    flex-basis: 75%;
+    flex-basis: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    @media (max-width: 992px) {
+      row-gap: 20px;
+    }
   }
 
   &__item {
@@ -27,7 +30,7 @@
     display: flex;
     flex-direction: column;
     margin: 0 5px 10px;
-    flex-basis: 15%;
+    flex-basis: 12%;
     @media screen and (max-width: 768px) {
       flex-basis: 45%;
       margin: 0 5px 10px;
@@ -122,7 +125,7 @@
     font-size: 15px;
     line-height: 1.5;
     letter-spacing: -0.02px;
-    color: $white;
+    color: rgba(255, 255, 255, 0.8);
   }
 
   &__social {
@@ -158,11 +161,19 @@
       width: 44px;
       height: 44px;
     }
+    img {
+      width: 44px;
+      height: 44px;
+    }
     @media screen and (max-width: 768px) {
       width: 34px;
       height: 34px;
 
       svg {
+        width: 34px;
+        height: 34px;
+      }
+      img {
         width: 34px;
         height: 34px;
       }

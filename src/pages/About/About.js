@@ -4,20 +4,19 @@ import OrpAbout from './OrpAbout';
 import Values from './Values';
 import Faq from './Faq';
 import IntroAbout from './IntroAbout';
+import Docs from './Docs';
 
 const About = () => {
   const location = useLocation();
   const myRef1 = useRef(null);
   const myRef2 = useRef(null);
   const myRef3 = useRef(null);
-
   const scrollToRef = (ref) => {
     ref.current.scrollIntoView({
       block: 'start',
     });
   };
   const navigateToBlock = () => {
-    console.log(location.state, 'loc');
     const { state } = location;
     let value;
     if (state) {
@@ -50,7 +49,8 @@ const About = () => {
       <div className="about__wrapper">
         <IntroAbout />
         <OrpAbout refProp={myRef1} />
-        <Values refProp={myRef2} />
+        <Values />
+        <Docs refProp={myRef2} />
         <Faq refProp={myRef3} />
       </div>
     </section>
