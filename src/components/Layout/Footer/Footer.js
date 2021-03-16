@@ -18,7 +18,8 @@ const Footer = () => {
     <footer className="footer ">
       {isShow && (
         <Modal
-          label="Coming Soon - Inquiries can be sent to"
+          mainLabel="Coming Soon"
+          subLabel="Inquiries can be sent to"
           anchor={{
             href: 'mailto:m@openreforestation.org',
             label: 'm@openreforestation.org',

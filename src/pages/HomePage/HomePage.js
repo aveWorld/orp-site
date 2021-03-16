@@ -65,7 +65,8 @@ const HomePage = () => {
             </div>
             {isShow && (
               <Modal
-                label="Coming Soon - Inquiries can be sent to"
+                mainLabel="Coming Soon"
+                subLabel="Inquiries can be sent to"
                 anchor={{ href: 'mailto:m@openreforestation.org', label: 'openreforestation.org' }}
                 close={() => togglePopup()}
               />
