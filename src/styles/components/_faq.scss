@@ -17,23 +17,46 @@
   &__desc {
     margin-top: 71px;
 
-    & p {
-      font-weight: 400;
-      font-size: 24px;
-      line-height: 1.2;
+    &__content {
+      & p {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.2;
+      }
+
+      transition: display 0.4s ease-in-out;
 
       &:not(last-child) {
         margin-bottom: 15px;
+      }
+
+      &--visible {
+        display: block;
+      }
+
+      &--hidden {
+        display: none;
       }
     }
   }
 
   &__title {
     font-weight: 900;
+    cursor: pointer;
+    display: flex;
     font-size: 24px;
     line-height: 1.2;
     margin-bottom: 15px;
     padding-bottom: 15px;
     border-bottom: 3px solid $black;
+
+    &__icon {
+      margin-left: auto;
+      transform-origin: 50% 15px;
+      & svg {
+        width: 30px;
+        height: auto;
+      }
+    }
   }
 }

@@ -1,12 +1,23 @@
 import React from 'react';
 import { ReactSVG } from 'react-svg';
-import { Link } from 'react-router-dom';
 import Button from '../../components/Button';
 
 import logo from '../../assets/image/logo.svg';
 import Satelite from '../../assets/image/icone/satelite.svg';
 import ConnDots from '../../assets/image/icone/connDots.svg';
 import Palm from '../../assets/image/icone/Palm.svg';
+
+// 1 Pagers
+import pager2 from '../../assets/pdfs/Entrepreneurs 1P.pdf';
+import pager4 from '../../assets/pdfs/Investors 1P.pdf';
+import pager1 from '../../assets/pdfs/Project Operators 1P.pdf';
+import pager3 from '../../assets/pdfs/Tech Integrators 1P.pdf';
+
+// Slides
+import slide2 from '../../assets/pdfs/Entrepreneurs FINAL.pdf';
+import slide4 from '../../assets/pdfs/Investors FINAL.pdf';
+import slide1 from '../../assets/pdfs/Project Operators FINAL.pdf';
+import slide3 from '../../assets/pdfs/Technology Integrators FINAL.pdf';
 
 const GetInvoled = () => (
   <section className="involved">
@@ -19,20 +30,20 @@ const GetInvoled = () => (
           <h2 className="involved__title">Get Involved</h2>
         </div>
         <div className="involved__first-block__links">
-          <Link className="btn inner involved__btn" to="project-operators">
+          <a className="btn inner involved__btn" href="#operators">
             Project Operators
-          </Link>
-          <Link className="btn inner involved__btn" to="enterpreneurs">
+          </a>
+          <a className="btn inner involved__btn" href="#entrepreneurs">
             Entrepreneurs
-          </Link>
-          <Link className="btn inner involved__btn" to="tech-integrators">
+          </a>
+          <a className="btn inner involved__btn" href="#integrators">
             Tech Integrators
-          </Link>
-          <Link className="btn inner involved__btn" to="investors">
+          </a>
+          <a className="btn inner involved__btn" href="#investors">
             Investors
-          </Link>
+          </a>
         </div>
-        <div className="involved__block">
+        <div className="involved__block" id="operators">
           <div className="involved__block__title">
             <div className="involved__block__title__logo">
               <ReactSVG src={Palm} />
@@ -54,11 +65,15 @@ const GetInvoled = () => (
           </p>
           <div className="involved__pdf">
             <span>PDFs: </span>
-            <Button label="1 Pager" customClass="inner" handleClick={() => {}} />
-            <Button label="Slides" customClass="inner" handleClick={() => {}} />
+            <a className="btn inner" href={pager1} target="_blank" rel="noopener noreferrer">
+              1 Pager
+            </a>
+            <a className="btn inner" href={slide1} target="_blank" rel="noopener noreferrer">
+              Slides
+            </a>
           </div>
         </div>
-        <div className="involved__block">
+        <div className="involved__block" id="entrepreneurs">
           <div className="involved__block__title">
             <div className="involved__block__title__logo">
               <ReactSVG src={ConnDots} />
@@ -74,11 +89,15 @@ const GetInvoled = () => (
           </p>
           <div className="involved__pdf">
             <span>PDFs: </span>
-            <Button label="1 Pager" customClass="inner" handleClick={() => {}} />
-            <Button label="Slides" customClass="inner" handleClick={() => {}} />
+            <a className="btn inner" href={pager2} target="_blank" rel="noopener noreferrer">
+              1 Pager
+            </a>
+            <a className="btn inner" href={slide2} target="_blank" rel="noopener noreferrer">
+              Slides
+            </a>
           </div>
         </div>
-        <div className="involved__block">
+        <div className="involved__block" id="integrators">
           <div className="involved__block__title">
             <div className="involved__block__title__logo">
               <ReactSVG src={Satelite} />
@@ -88,17 +107,21 @@ const GetInvoled = () => (
           <p className="involved__block__text">
             ORP is a hub for global reforestation initiatives. As a reforestation technology
             provider, you have the opportunity to connect with ORP and connect your service to the
-            suite of projects building on ORP. Technology integrators have the opportunity to
-            improve the veracity of reforestation projects while also reaching the world’s largest
-            audience of reforestation projects.
+            suite of projects building on the protocol. Technology integrators have the opportunity
+            to improve the veracity of reforestation projects while also reaching the world’s
+            largest audience of reforestation projects.
           </p>
           <div className="involved__pdf">
             <span>PDFs: </span>
-            <Button label="1 Pager" customClass="inner" handleClick={() => {}} />
-            <Button label="Slides" customClass="inner" handleClick={() => {}} />
+            <a className="btn inner" href={pager3} target="_blank" rel="noopener noreferrer">
+              1 Pager
+            </a>
+            <a className="btn inner" href={slide3} target="_blank" rel="noopener noreferrer">
+              Slides
+            </a>
           </div>
         </div>
-        <div className="involved__block">
+        <div className="involved__block" id="investors">
           <div className="involved__block__title">
             <div className="involved__block__title__logo">
               <ReactSVG src={Satelite} />
@@ -114,8 +137,12 @@ const GetInvoled = () => (
           </p>
           <div className="involved__pdf">
             <span>PDFs: </span>
-            <Button label="1 Pager" customClass="inner" handleClick={() => {}} />
-            <Button label="Slides" customClass="inner" handleClick={() => {}} />
+            <a className="btn inner" href={pager4} target="_blank" rel="noopener noreferrer">
+              1 Pager
+            </a>
+            <a className="btn inner" href={slide4} target="_blank" rel="noopener noreferrer">
+              Slides
+            </a>
           </div>
         </div>
       </div>

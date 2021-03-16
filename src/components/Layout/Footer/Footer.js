@@ -5,6 +5,7 @@ import icone1 from '../../../assets/image/icone/Medium.svg';
 import icone2 from '../../../assets/image/icone/twitter.svg';
 import icone3 from '../../../assets/image/icone/Instagram.svg';
 import icone4 from '../../../assets/image/icone/reddit.svg';
+import WhitePaper from '../../../assets/pdfs/ORP Whitepaper V2.pdf';
 
 const Footer = () => (
   <footer className="footer ">
@@ -31,9 +32,14 @@ const Footer = () => (
           </div>
           <div className="footer__item">
             <span className="footer__anchor  main">Developers</span>
-            <Link className="footer__anchor" to="soon">
+            <a
+              className="footer__anchor"
+              href={WhitePaper}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Whitepaper
-            </Link>
+            </a>
             <Link className="footer__anchor" to="soon">
               Documentation
             </Link>
@@ -78,18 +84,38 @@ const Footer = () => (
           </div>
           <div className="footer__item">
             <span className="footer__anchor main">Community</span>
-            <Link className="footer__anchor" to="/">
+            <a
+              className="footer__anchor"
+              href="https://twitter.com/reforestclean?s=21"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               Twitter
-            </Link>
-            <Link className="footer__anchor" to="/">
-              Discord
-            </Link>
-            <Link className="footer__anchor" to="/">
+            </a>
+            <a
+              className="footer__anchor"
+              href="https://www.instagram.com/openreforestationprotocol/?igshid=azan2l8q4y6j"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Instagram
+            </a>
+            <a
+              className="footer__anchor"
+              href="https://medium.com/@Openreforestation"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Blog
+            </a>
+            <a
+              className="footer__anchor"
+              href="https://www.reddit.com/r/orp/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               Reddit
-            </Link>
-            <Link className="footer__anchor" to="/">
-              Clubhouse
-            </Link>
+            </a>
           </div>
           <div className="footer__item main">
             <span className="footer__anchor main">About</span>
@@ -109,6 +135,19 @@ const Footer = () => (
               How it Works
             </Link>
           </div>
+          <div className="footer__item">
+            <span className="footer__anchor main" to="governance">
+              Governance
+            </span>
+            <a
+              className="footer__anchor"
+              href="mailto:m@openreforestation.org"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              m@openreforestation.org
+            </a>
+          </div>
         </div>
       </div>
       <div className="footer__bottom">
@@ -117,9 +156,14 @@ const Footer = () => (
         <div className="footer__social">
           <span>Follow us:</span>
           <div className="footer__social-list">
-            <Link to="/" className="footer__social-item">
+            <a
+              href="https://medium.com/@Openreforestation"
+              className="footer__social-item"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <ReactSVG src={icone1} />
-            </Link>
+            </a>
             <a
               href="https://twitter.com/ReforestClean"
               className="footer__social-item"
@@ -128,12 +172,22 @@ const Footer = () => (
             >
               <ReactSVG src={icone2} />
             </a>
-            <Link to="/" className="footer__social-item">
+            <a
+              href="https://www.instagram.com/openreforestationprotocol/?igshid=azan2l8q4y6j"
+              className="footer__social-item"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <ReactSVG src={icone3} />
-            </Link>
-            <Link to="/" className="footer__social-item">
+            </a>
+            <a
+              href="https://www.reddit.com/r/orp/"
+              className="footer__social-item"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <ReactSVG src={icone4} />
-            </Link>
+            </a>
           </div>
         </div>
       </div>

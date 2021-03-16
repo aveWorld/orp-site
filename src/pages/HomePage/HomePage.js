@@ -148,10 +148,15 @@ const HomePage = () => {
             Keep up with ORP on Social Media
           </div>
           <div className="homepage__eco">
-            <Link className="homepage__eco-item" to="/">
+            <a
+              className="homepage__eco-item"
+              href="https://medium.com/@Openreforestation"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <ReactSVG src={iconeSocial1} />
               <span>Blog</span>
-            </Link>
+            </a>
             <a
               className="homepage__eco-item"
               href="https://twitter.com/ReforestClean"
@@ -161,16 +166,26 @@ const HomePage = () => {
               <ReactSVG src={iconeSocial2} />
               <span>Twitter</span>
             </a>
-            <Link className="homepage__eco-item" to="/">
+            <a
+              className="homepage__eco-item"
+              href="https://www.instagram.com/openreforestationprotocol/?igshid=azan2l8q4y6j"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <ReactSVG src={iconeSocial3} />
 
               <span>Instagram</span>
-            </Link>
-            <Link className="homepage__eco-item" to="/">
+            </a>
+            <a
+              className="homepage__eco-item"
+              href="https://www.reddit.com/r/orp/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <ReactSVG src={iconeSocial4} />
 
               <span>Reddit</span>
-            </Link>
+            </a>
           </div>
         </div>
       </div>

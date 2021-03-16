@@ -52,7 +52,7 @@ const Governance = () => {
         </div>
         <div className="govern__btn">
           <Link to="/" className="btn inner">
-            Governance Forum
+            ORP DAO Forum
           </Link>
         </div>
         <div className="govern__item">
