@@ -1,6 +1,6 @@
 .involved {
-  padding: 111px 0 116px;
-
+  padding: 68px 0 102px;
+  scroll-behavior: smooth;
   @media screen and (max-width: 768px) {
     padding: 91px 0 66px;
   }
@@ -19,7 +19,13 @@
   }
 
   &__btn {
-    padding: 20px 16px;
+    padding: 26px 26px 28px 26px;
+    @media screen and (max-width: 400px) {
+      min-height: 86px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   &__title {
@@ -80,21 +86,90 @@
     }
   }
 
+  &__pdf {
+    margin-top: 66px;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+
+    @media screen and (max-width: 576px) {
+      flex-wrap: wrap;
+    }
+
+    & span {
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 43px;
+      margin-right: 88px;
+      @media screen and (max-width: 768px) {
+        margin-right: 48px;
+      }
+      @media screen and (max-width: 576px) {
+        flex-basis: 100%;
+      }
+    }
+
+    & a {
+      padding: 26px 26px 28px 26px;
+      max-width: 172px;
+      margin-right: 106px;
+      @media screen and (max-width: 768px) {
+        margin-right: 56px;
+      }
+      @media screen and (max-width: 576px) {
+        margin: 20px auto 0;
+      }
+    }
+  }
+
   &__block {
-    margin-top: 86px;
+    margin-top: 150px;
     &__text {
       padding-top: 28px;
     }
-    & button {
+    &__btn {
       color: $white;
       max-width: 132px;
       display: block;
-      margin: 20px auto 0px;
+      margin-left: 50px;
     }
     &__title {
-      font-size: 48px;
-      @media screen and (max-width: 400px) {
-        font-size: 42px;
+      display: flex;
+      align-items: center;
+      @media screen and (max-width: 768px) {
+        font-size: 40px;
+        flex-wrap: wrap;
+        & button {
+          margin: 20px auto 0;
+        }
+
+        &__text {
+          flex-basis: 100%;
+        }
+      }
+
+      &__text {
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 58px;
+        @media screen and (max-width: 768px) {
+          margin-top: 10px;
+        }
+        @media screen and (max-width: 400px) {
+          font-size: 40px;
+        }
+      }
+
+      &__logo {
+        background-color: $lightBlack;
+        padding: 15px 22px 10px;
+        border-radius: 10px;
+        margin-right: 40px;
+      }
+
+      & svg {
+        width: 70px;
+        height: 70px;
       }
     }
   }

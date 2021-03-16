@@ -9,7 +9,56 @@
     @media screen and (max-width: 992px) {
       padding: 0 15px 0 40px;
     }
+  }
 
+  &__dropdown {
+    position: relative;
+    display: inline-block;
+    &__content {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 140px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+
+      & a {
+        padding: 10px 5px;
+        font-size: 15px;
+      }
+
+      & a:hover {
+        background-color: #f1f1f1;
+      }
+    }
+    &:hover &__content {
+      display: flex;
+      transform-origin: top;
+      animation-duration: 0.5s;
+      animation-name: slidein;
+    }
+
+    @media screen and (max-width: 768px) {
+      &__content {
+        margin-bottom: 10px;
+        position: relative;
+      }
+
+      & .header__item {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+
+  @keyframes slidein {
+    from {
+      transform: scaleY(0);
+    }
+    to {
+      transform: scaleY(1);
+    }
   }
 
   &__wrapper-btn {
@@ -20,7 +69,7 @@
     display: flex;
     max-width: 103px;
     max-height: 54px;
-    & svg{
+    & svg {
       width: 100%;
       height: 100%;
     }
@@ -42,7 +91,7 @@
       position: fixed;
       transition: 0.5s;
       width: 100%;
-      height: 100vh;
+      min-height: 100vh;
       flex-direction: column;
       background: $black;
       align-items: center;
@@ -59,7 +108,6 @@
 
   &__wrapper-brn {
     max-width: 134px;
-
   }
 
   &__item {
@@ -71,9 +119,9 @@
     font-weight: 400;
 
     &:after {
-      transition: transform .75s;
+      transition: transform 0.75s;
       position: absolute;
-      content: "";
+      content: '';
       height: 2px;
       background: #ffffff;
       width: 100%;
@@ -81,7 +129,6 @@
       right: 0px;
       transform-origin: right;
       transform: scaleX(0);
-
     }
 
     &:hover {
@@ -103,10 +150,11 @@
       font-size: 14px;
     }
     @media screen and (max-width: 768px) {
+      margin-right: 0px;
+      text-align: center;
       margin-bottom: 20px;
       font-size: 16px;
     }
-
   }
 
   &__burger {
@@ -116,7 +164,7 @@
     align-self: center;
     cursor: pointer;
     overflow: hidden;
-    transition: .3s;
+    transition: 0.3s;
     display: none;
     z-index: 4;
 
@@ -126,7 +174,7 @@
       height: 3px;
       background: $lightGreen;
       position: absolute;
-      transition: .3s;
+      transition: 0.3s;
     }
 
     span:last-child {
@@ -140,11 +188,9 @@
 
     span:first-child {
       top: 0;
-
     }
 
     &:hover {
-
       transform: scale(1.1);
     }
 
@@ -156,7 +202,6 @@
       span:first-child {
         top: 9px;
         transform: rotateZ(45deg);
-
       }
 
       span:last-child {
@@ -169,5 +214,4 @@
       display: flex;
     }
   }
-
 }
