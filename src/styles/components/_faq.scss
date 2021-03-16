@@ -20,6 +20,7 @@
     &__content {
       & p {
         font-weight: 400;
+        padding-top: 20px;
         font-size: 24px;
         line-height: 1.2;
       }
@@ -32,11 +33,23 @@
 
       &--visible {
         display: block;
+        animation-duration: 0.3s;
+        animation-name: slidein;
+        transform-origin: top;
       }
 
       &--hidden {
         display: none;
       }
+    }
+  }
+
+  @keyframes slidein {
+    from {
+      transform: scaleY(0);
+    }
+    to {
+      transform: scaleY(1);
     }
   }
 

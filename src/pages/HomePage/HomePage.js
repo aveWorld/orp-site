@@ -65,7 +65,7 @@ const HomePage = () => {
             </div>
             {isShow && (
               <Modal
-                label="App Coming Soon - Inquiries can be sent to"
+                label="Coming Soon - Inquiries can be sent to"
                 anchor={{ href: 'mailto:m@openreforestation.org', label: 'openreforestation.org' }}
                 close={() => togglePopup()}
               />
@@ -121,25 +121,25 @@ const HomePage = () => {
         <div className="homepage__four-block">
           <h3 className="homepage__sub-title">Climate Tech 2.0</h3>
           <div className="homepage__climate">
-            <Link className="homepage__climate-item" to="/">
+            <div className="homepage__climate-item" onClick={() => togglePopup()}>
               <ReactSVG src={trees} />
               <span className="gen">Jumpstarting the Reforestation Economy</span>
-            </Link>
-            <Link className="homepage__climate-item" to="/">
+            </div>
+            <div className="homepage__climate-item" onClick={() => togglePopup()}>
               <ReactSVG src={satelite} />
               <span className="gen">Technology Integrators</span>
-            </Link>
-            <Link className="homepage__climate-item" to="/">
+            </div>
+            <div className="homepage__climate-item" onClick={() => togglePopup()}>
               <ReactSVG src={connDots} />
               <span className="gen">Green Software Products </span>
               <span className="inner">
                 Already supporting reforestation? Connect with a project!
               </span>
-            </Link>
-            <Link className="homepage__climate-item" to="/">
+            </div>
+            <div className="homepage__climate-item" onClick={() => togglePopup()}>
               <ReactSVG src={tag} />
               <span className="gen">SDKs and APIs</span>
-            </Link>
+            </div>
           </div>
         </div>
         <div className="homepage__five-block">

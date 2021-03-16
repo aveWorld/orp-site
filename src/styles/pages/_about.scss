@@ -43,6 +43,9 @@
       font-size: 36px;
       line-height: 48px;
       color: $white;
+      &:nth-of-type(1) {
+        font-style: italic;
+      }
       @media screen and (max-width: 992px) {
         font-size: 28px;
       }
@@ -51,7 +54,6 @@
       }
 
       & span {
-        font-style: italic;
         font-weight: 600;
       }
     }

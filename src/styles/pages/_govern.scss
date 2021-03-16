@@ -27,6 +27,10 @@
       height: auto;
     }
 
+    & h2 {
+      padding-top: 4px;
+    }
+
     @media screen and (max-width: 576px) {
       flex-wrap: wrap;
     }

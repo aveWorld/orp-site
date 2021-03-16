@@ -108,7 +108,7 @@ const Header = () => {
             <Button label="Use ORP" customClass="reg-top" handleClick={() => togglePopup()} />
             {isShow && (
               <Modal
-                label="App Coming Soon - Inquiries can be sent to"
+                label="Coming Soon - Inquiries can be sent to"
                 anchor={{
                   href: 'mailto:m@openreforestation.org',
                   label: 'm@openreforestation.org',
