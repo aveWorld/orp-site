@@ -67,7 +67,7 @@ const HomePage = () => {
               <Modal
                 mainLabel="Coming Soon"
                 subLabel="Inquiries can be sent to"
-                anchor={{ href: 'mailto:m@openreforestation.org', label: 'openreforestation.org' }}
+                anchor={{ href: 'mailto:m@openreforestation.org', label: 'm@openreforestation.org' }}
                 close={() => togglePopup()}
               />
             )}
