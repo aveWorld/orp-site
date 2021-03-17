@@ -21,11 +21,12 @@
     @media screen and (max-width: 992px) {
       margin: 0 auto;
       width: 550px;
+      padding: 8px 58px 1px 49px;
     }
 
     @media screen and (max-width: 576px) {
       width: 300px;
-      padding: 48px 28px 1px 28px;
+      padding: 8px 28px 1px 28px;
     }
 
     &__title {
@@ -37,7 +38,7 @@
       @media screen and (max-width: 992px) {
         flex-wrap: wrap;
         justify-content: center;
-        row-gap: 40px;
+        // row-gap: 40px;
         &__text:nth-child(1):after,
         &__text:nth-child(2):after {
           top: 100% !important;
@@ -52,6 +53,7 @@
         font-weight: 900;
         font-size: 36px;
         line-height: 43px;
+        margin-top: 40px;
         position: relative;
         @media screen and (max-width: 576px) {
           font-size: 28px;

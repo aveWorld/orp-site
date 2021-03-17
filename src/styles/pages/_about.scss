@@ -142,17 +142,17 @@
       }
 
       &__wrapper {
-        margin-top: 38px;
+        padding-top: 8px;
         display: flex;
         column-gap: 80px;
 
         @media screen and (max-width: 768px) {
           flex-wrap: wrap;
           justify-content: center;
-          row-gap: 30px;
         }
 
         & a {
+          margin-top: 30px;
           padding: 35px 10px 38px 10px;
           font-size: 18px;
           line-height: 22px;

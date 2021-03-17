@@ -33,7 +33,7 @@ const Footer = () => {
             <div className="footer__item">
               <span className="footer__anchor main">Protocol</span>
               <Link className="footer__anchor" onClick={() => togglePopup()}>
-                Reforesters
+                Reforester
               </Link>
               <Link className="footer__anchor" onClick={() => togglePopup()}>
                 Collateral Zone
