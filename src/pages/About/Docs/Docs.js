@@ -1,9 +1,9 @@
 import React from 'react';
 import { ReactSVG } from 'react-svg';
 import Logo from '../../../assets/image/logo.svg';
-import NFTResearch from '../../../assets/pdfs/NFT Research Paper V2.pdf';
-import WhitePaper from '../../../assets/pdfs/ORP Whitepaper V2.pdf';
-import Mechanism from '../../../assets/pdfs/ORP Mechanism Design V2.pdf';
+import NFTResearch from '../../../assets/pdfs/NFT_Research_Paper_V2.pdf';
+import WhitePaper from '../../../assets/pdfs/ORP_Whitepaper_V2.pdf';
+import Mechanism from '../../../assets/pdfs/ORP_Mechanism_Design_V2.pdf';
 
 export default function Docs({ refProp }) {
   return (

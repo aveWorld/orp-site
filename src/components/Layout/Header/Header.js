@@ -5,7 +5,7 @@ import Button from '../../Button';
 import logo from '../../../assets/image/logo.svg';
 import Modal from '../../Modall';
 
-import WhitePaper from '../../../assets/pdfs/ORP Whitepaper V2.pdf';
+import WhitePaper from '../../../assets/pdfs/ORP_Whitepaper_V2.pdf';
 
 // import
 const Header = () => {

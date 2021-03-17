@@ -8,16 +8,16 @@ import ConnDots from '../../assets/image/icone/connDots.svg';
 import Palm from '../../assets/image/icone/Palm.svg';
 
 // 1 Pagers
-import pager2 from '../../assets/pdfs/Entrepreneurs 1P.pdf';
-import pager4 from '../../assets/pdfs/Investors 1P.pdf';
-import pager1 from '../../assets/pdfs/Project Operators 1P.pdf';
-import pager3 from '../../assets/pdfs/Tech Integrators 1P.pdf';
+import pager2 from '../../assets/pdfs/Entrepreneurs_1P.pdf';
+import pager4 from '../../assets/pdfs/Investors_1P.pdf';
+import pager1 from '../../assets/pdfs/Project_Operators_1P.pdf';
+import pager3 from '../../assets/pdfs/Tech_Integrators_1P.pdf';
 
 // Slides
-import slide2 from '../../assets/pdfs/Entrepreneurs FINAL.pdf';
-import slide4 from '../../assets/pdfs/Investors FINAL.pdf';
-import slide1 from '../../assets/pdfs/Project Operators FINAL.pdf';
-import slide3 from '../../assets/pdfs/Technology Integrators FINAL.pdf';
+import slide2 from '../../assets/pdfs/Entrepreneurs_FINAL.pdf';
+import slide4 from '../../assets/pdfs/Investors_FINAL.pdf';
+import slide1 from '../../assets/pdfs/Project_Operators_FINAL.pdf';
+import slide3 from '../../assets/pdfs/Technology_Integrators_FINAL.pdf';
 import Modal from '../../components/Modall';
 
 const GetInvoled = () => {
@@ -59,27 +59,29 @@ const GetInvoled = () => {
               <Button
                 label="Use ORP"
                 customClass="inner involved__block__btn"
-                handleClick={() => { togglePopup(); }}
+                handleClick={() => {
+                  togglePopup();
+                }}
               />
               {isShow && (
-              <Modal
-                mainLabel="Coming Soon"
-                subLabel="Inquiries can be sent to"
-                anchor={{
-                  href: 'mailto:m@openreforestation.org',
-                  label: 'm@openreforestation.org',
-                }}
-                close={() => togglePopup()}
-              />
+                <Modal
+                  mainLabel="Coming Soon"
+                  subLabel="Inquiries can be sent to"
+                  anchor={{
+                    href: 'mailto:m@openreforestation.org',
+                    label: 'm@openreforestation.org',
+                  }}
+                  close={() => togglePopup()}
+                />
               )}
             </div>
             <p className="involved__block__text">
               The Open Reforestation Protocol (ORP) is a solution for project operators hoping to
-              digitize their reforestation efforts. The blockchain basis of the ORP introduces a novel
-              collaborative funding mechanism for reforestation, allowing project owners to secure
-              capital from diverse sources and meet funding goals more rapidly. ORP builds trust in
-              reforestation projects, attracting more investment and leading to more trees being
-              planted around the world.
+              digitize their reforestation efforts. The blockchain basis of the ORP introduces a
+              novel collaborative funding mechanism for reforestation, allowing project owners to
+              secure capital from diverse sources and meet funding goals more rapidly. ORP builds
+              trust in reforestation projects, attracting more investment and leading to more trees
+              being planted around the world.
             </p>
             <div className="involved__pdf">
               <span>PDFs: </span>
@@ -102,8 +104,8 @@ const GetInvoled = () => {
               ORP provides entrepreneurs with an opportunity to integrate with the restoration
               economy. The protocol’s modernized reforestation system aligns the value chains of
               project operators with reforestation entrepreneurs. Developers and founders have the
-              opportunity to build solutions on top of reforestation projects, or even integrate with
-              the projects themselves.
+              opportunity to build solutions on top of reforestation projects, or even integrate
+              with the projects themselves.
             </p>
             <div className="involved__pdf">
               <span>PDFs: </span>
@@ -125,9 +127,9 @@ const GetInvoled = () => {
             <p className="involved__block__text">
               ORP is a hub for global reforestation initiatives. As a reforestation technology
               provider, you have the opportunity to connect with ORP and connect your service to the
-              suite of projects building on the protocol. Technology integrators have the opportunity
-              to improve the veracity of reforestation projects while also reaching the world’s
-              largest audience of reforestation projects.
+              suite of projects building on the protocol. Technology integrators have the
+              opportunity to improve the veracity of reforestation projects while also reaching the
+              world’s largest audience of reforestation projects.
             </p>
             <div className="involved__pdf">
               <span>PDFs: </span>

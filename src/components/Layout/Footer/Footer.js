@@ -6,7 +6,7 @@ import icone1 from '../../../assets/image/icone/Medium.svg';
 import icone2 from '../../../assets/image/icone/twitter.svg';
 import icone3 from '../../../assets/image/icone/Instagram.svg';
 import icone4 from '../../../assets/image/icone/reddit.svg';
-import WhitePaper from '../../../assets/pdfs/ORP Whitepaper V2.pdf';
+import WhitePaper from '../../../assets/pdfs/ORP_Whitepaper_V2.pdf';
 
 const Footer = () => {
   const [isShow, setIsShow] = useState(false);
